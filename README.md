@@ -20,8 +20,6 @@ the model in the learning process of cross-language code summarization. Experime
 # # 4 Environment configuration
 - `ubuntu`
 - `tensorflow>=2.0`
-- `cuda`
-- `cudnn` 
 - `python>=3.6` 
   
       
