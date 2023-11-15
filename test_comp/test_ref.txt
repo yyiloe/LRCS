@@ -1,0 +1,1884 @@
+0	returns a hash in the following format " pod / web - 1 " = > [ " pulling pulling image " hello - worldlatest " ( 1 events ) " .
+1	outputs the deferred summary information saved via @logger .
+2	inspect the file referenced in the kubectl stderr to make it easier for developer to understand what s going o .
+3	make sure to never prune the ejson - keys secre .
+4	determine the best compressor for the current system .
+5	copy all scripts in project .
+6	create the gen template for +mkinstallp+ .
+7	create the bff file using +mkinstallp+ .
+8	glob across the given pattern .
+9	glob for all files under a given path / pattern .
+10	the relative path of the given +path+ to the +parent+ .
+11	determine the packager ( s ) for the current system .
+12	cleans any previously left over mounted disks .
+13	attach the dmg .
+14	create the icon for the volume using sips .
+15	use applescript to setup the dmg with pretty logos and colors .
+16	compress the dmg using hdiutil and zlib .
+17	set the dmg icon to our custom icon .
+18	a set of transform rules that pkgmogrify will apply to the package manifest .
+19	generate package metadata create the gen template for pkgmogrify @return [ void ] .
+20	publish the ips pkg into the local ips repo @return [ void ] .
+21	convert a the published ips pkg from the local repo into the more easily distributable * .
+22	check dll image location overlap / conflicts on windows .
+23	run healthchecks against otool .
+24	run healthchecks against aix .
+25	run healthchecks against ldd .
+26	the list of whitelisted ( ignored ) files from the project and softwares .
+27	execute the given command .
+28	check the given path and library for " bad " libraries .
+29	calculate the digest of the file at the given path .
+30	calculate the digest of a directory at the given path .
+31	create a new instance of the digest class that corresponds to the given type .
+32	update the digest with the given contents of the file .
+33	create a new publisher from the given pattern .
+34	construct the intermediate build product .
+35	write the distribution file to the staging area .
+36	construct the product package .
+37	return the pkg - ready version .
+38	determine how wide a column should be .
+39	fetch any new files by copying them to the +project dir+ .
+40	the order in which each software component should be built .
+41	the artifact object that corresponds to this package .
+42	the build object that corresponds to this package .
+43	the artifactory client object to communicate with the artifactory api .
+44	the metadata for this package .
+45	the path where the package will live inside of the artifactory repository .
+46	set or retrieve the custom msi building parameters .
+47	set the wix light extensions to load @example wix light extension wixutilextension @param [ string ] extension a list of extensions to load @return [ array ] the list of extensions that will be loade .
+48	signal delay validation for wix light @example wix light deplay validation true @param [ trueclass .
+49	set the wix candle extensions to load @example wix candle extension wixutilextension @param [ string ] extension a list of extensions to load @return [ array ] the list of extensions that will be loade .
+50	discovers a path to a gem / file included in a gem under the install directory .
+51	write the localization file into the staging directory .
+52	write the parameters file into the staging directory .
+53	write the source file into the staging directory .
+54	write the bundle file into the staging directory .
+55	get the shell command to create a zip file that contains the contents of the project install directory @return [ string ] .
+56	get the shell command to run heat in order to create a a wix manifest of project files to be packaged into the msi @return [ string ] .
+57	get the shell command to complie the project wix files @return [ string ] .
+58	get the shell command to link the project wix object files @return [ string ] .
+59	callback that is called by software objects to determine the version .
+60	append the build start time to the given string if config .
+61	returns true if a given version string looks like it was already created with a function that added a timestamp .
+62	determines the build version based on source type .
+63	render an erb template to a string variable .
+64	render an erb template on disk at +source+ .
+65	print a deprecation warning .
+66	add a message to the logger with the given severity and progname .
+67	idempotently create the required directories for building / downloading .
+68	fetch any new files by copying them to the +project dir+ .
+69	execute the given make command .
+70	apply the patch by the given name .
+71	execute the given appbundler command against the embedded ruby s appbundler .
+72	execute the given rake command against the embedded ruby s rake .
+73	render the erb template by the given name .
+74	touch the given filepath at runtime .
+75	delete the given file or directory on the system .
+76	strip symbols from the given file or directory on the system .
+77	copy the given source to the destination .
+78	helper method to update config guess in the software s source directory .
+79	the shasum for this builder object .
+80	this is a helper method that wraps util .
+81	execute the given block with ( n ) reties defined by config .
+82	execute the given command .
+83	find a file amonst all local files .
+84	inspect the given command and warn if the command " looks " like it is a shell command that has a dsl method .
+85	create an in - memory tarball from the given packager .
+86	create the gzipped tarball .
+87	clean the project directory if it exists and actually extract the downloaded file .
+88	the path on disk to the downloaded asset .
+89	download the given file using ruby s +openuri+ implementation .
+90	extract the downloaded file .
+91	extracts the downloaded archive file into project dir .
+92	the digest type defined in the software definition @raise [ checksummissing ] if the checksum does not exist @return [ symbol ] .
+93	verify the downloaded file has the correct checksum .
+94	iterates through available timestamp servers and tries to sign the file with with each server .
+95	get the certificate subject of the signing identity @return [ string ] .
+96	parse and return the version from the project .
+97	create a new software object .
+98	evaluate a block only if the version matches .
+99	add a file to the healthcheck whitelist .
+100	add standard compiler flags to the environment hash to produce omnibus binaries ( correct rpath .
+101	a path variable format string representing the current path with the project s embedded / bin directory prepended .
+102	a path variable format string representing the current path with the given path prepended .
+103	the repo - level and project - level overrides for the software .
+104	returns the version to be used in cache .
+105	the fetcher for this software this is where we handle all the crazy back - compat on relative path .
+106	build the software package .
+107	the unique sha256 for this sofware definition .
+108	apply overrides in the @overrides hash that mask instance variables that are set by parsing the ds .
+109	transform github -> git in sourc .
+110	actually build this software .
+111	render a makeselfinst in the staging directory using the supplied erb template .
+112	run the actual makeself command .
+113	creates the full path if it does not exist already .
+114	computes the tag for this cache entry .
+115	create an incremental install path cache for the software ste .
+116	git caching will attempt to version embedded git directories .
+117	write the manifest file into the staging directory .
+118	the proper platform - specific " $path " key .
+119	shells out and runs +command+ .
+120	similar to +shellout+ method except it raises an exception if the command fails .
+121	retry the given block if a retriable exception is raised .
+122	convert the given path to be appropiate for shelling out on windows .
+123	convert the given path to be appropriate for usage with the given compiler @param [ string .
+124	create a directory at the given +path+ .
+125	remove the directory at the given +path+ .
+126	copy the +source+ file to the +destination+ .
+127	remove the file at the given path .
+128	create a file at the given path .
+129	create a symlink from a to b @param [ string ] a @param [ string ] .
+130	@param [ project ] project the project to create licenses for .
+131	callback that gets called by software .
+132	inspects the licensing information for the project and the included software components .
+133	creates the top level license file for the project .
+134	contents of the project s license @return [ string ] .
+135	summary of the licenses included by the softwares of the project .
+136	summary of the licenses of the transitive dependencies of the project .
+137	map that collects information about the licenses of the softwares included in the project .
+138	returns the location where the license file should reside in the package .
+139	uses license scout to collect the licenses for transitive dependencies into .
+140	checks transitive dependency licensing errors for the given softwar .
+141	collect the license files for the software .
+142	copy all scripts in project .
+143	generate a prototype file for solaris buil .
+144	generate a pkginfo file for solaris buil .
+145	the actual contents of the package .
+146	validate the presence of the required components for the package .
+147	the unique upload key for this package .
+148	we ll attempt to retrieve the timestamp from the jenkin s set build timestamp or fall back to build id environment variable .
+149	save the file to disk .
+150	set or return the vendor who made this package .
+151	set or return the license for this package .
+152	render an rpm spec file in +specs / .
+153	generate the rpm file using +rpmbuild+ .
+154	convert the path of a file in the staging directory to an entry for use in the spec file .
+155	render the rpm signing script with secure permissions .
+156	generate an rpm - safe name from the given string .
+157	shortcut method for executing a publisher .
+158	* * [ required ] * * set or retrieve the path at which the project should be installed by the generated package .
+159	set or retrieve the version of the project .
+160	add or override a customization for the packager with the given +id+ .
+161	add or override a customization for the compressor with the given +id+ .
+162	set or retrieve the overrides hash for one piece of software being overridden .
+163	location of license file that omnibus will create and that will contain the information about the license of the project plus the details about the licenses of the software components included in the project .
+164	indicates whether the given +software+ is defined as a software component of this project .
+165	generate a version manifest of the loaded software sources .
+166	writes a text manifest to the text manifest path .
+167	compression level ( 1 - 9 ) to use ( - z ) .
+168	compression strategy to use ( - z ) .
+169	render a control file in + .
+170	render the list of config files into the conffile .
+171	copy all scripts in project .
+172	generate a list of the md5 sums of every file in the package and write it to + .
+173	the size of this debian package .
+174	return the debian - ready base package name .
+175	return the debian - ready version .
+176	fetch ( clone ) or update ( fetch ) the remote git repository .
+177	determine if a directory is empty @return [ true .
+178	forcibly remove and recreate the project director .
+179	the current revision for the cloned checkout .
+180	check if the current clone has the requested commit id .
+181	converts a bn object to a string .
+182	compute the number of bits needed for the given number of bytes .
+183	returns the dh key parameters for the given session .
+184	build the signature buffer to use when verifying a signature from the server .
+185	executes the given block after the page is loaded .
+186	if any load validations from page subclasses returns false .
+187	prevent users from calling methods with blocks when they shouldn t be .
+188	sanitize method called before calling any siteprism dsl method or meta - programmed method .
+189	options re - combiner .
+190	runnable in the scope of any siteprismpage or section .
+191	if the page or section has expected items set .
+192	determine whether url matches our pattern .
+193	returns empty hash if the template omits the component or a set of substitutions if the provided uri component matches the template component or nil if the match fails .
+194	convert the pattern into an addressable uri by substituting the template slugs with nonsense strings .
+195	generate a repeatable 5 character uniform alphabetical nonsense string to allow parsing as a ur .
+196	builds enumerator objects that iterates n times and yields number starting from zero .
+197	builds enumerator object from a given array .
+198	builds enumerator from a lock queue instance that belongs to a job .
+199	builds enumerator from active record relation .
+200	builds enumerator from active record relation and enumerates on batches .
+201	constructs a enumerator on batches of csv rows @return [ enumerator ] enumerator instanc .
+202	restore the item from this version .
+203	enforces the version limit .
+204	returns @versions in chronological order .
+205	destroys all but the most recent version ( s ) for items on a given date ( or on all dates ) .
+206	returns a hash of versions grouped by the item id attribute formatted like this item id = > papertrailversion .
+207	adds a callback that records a version after a " create " event .
+208	adds a callback that records a version before or after a " destroy " event .
+209	adds a callback that records a version after an " update " event .
+210	adds a callback that records a version after a " touch " event .
+211	set up @model class for papertrail .
+212	some options require the presence of the item subtype column .
+213	recording order is " after " or " before " .
+214	like the update columns method from activerecordpersistence .
+215	returns the object ( not a version ) as it was at the given timestamp .
+216	returns the objects ( not versions ) as they were between the given times .
+217	invalidate some part of the snapshot / record ( dir .
+218	note relative path is temporarily expected to be a relative pathname to make refactoring easier ( ideally .
+219	groups changes into the expected structure expected by client .
+220	remove extraneous rb - inotify events .
+221	fetch tree node if necessar .
+222	scope on relative depth option .
+223	orphan strategy write .
+224	get all nodes and sorting them into an empty has .
+225	arrange array of nodes into a nested hash of the form node = > children .
+226	arrangement to nested arra .
+227	pseudo - preordered array of nodes .
+228	build ancestry from parent id s for migration purpose .
+229	rebuild depth cache if it got corrupted or if depth caching was just turned o .
+230	update descendants with new ancestry ( before save ) .
+231	apply orphan strategy ( before destroy - no changes ) .
+232	touch each of this record s ancestors ( after save ) .
+233	the ancestry value for this record s children ( before save ) this is technically child ancestry wa .
+234	indirect = anyone who is a descendant .
+235	increment failure of counts the number of failed code block executions enveloped by a given setting .
+236	rubocopdisable abcsiz .
+237	checks the response code for common errors .
+238	sets a base uri and default params for requests .
+239	creates a hash of options and their values .
+240	resets all configuration options to the defaults .
+241	start a timer in the included object @param timer [ .
+242	calculate number of seconds remaining until we hit the timeout @param timeout [ numeric ] to gauge whether a timeout needs to be calculated @return [ float ] number of seconds remaining until we hit the timeout @raise [ socketrytimeouterror ] if we ve already hit the timeout @raise [ socketryinternalerror ] if timeout has not been se .
+243	run a simple true / false validation of data against a schem .
+244	build all schemas with ids .
+245	either load a reference schema or create a new schem .
+246	returns a hash containing .
+247	matches the block or conditions has .
+248	checks if the given subject matches the given conditions hash .
+249	alias one or more actions into another one .
+250	see controlleradditions .
+251	accepts an array of actions and returns an array of actions which match .
+252	given an action .
+253	returns an array of rule instances which match the action and subject this does not take into consideration any hash conditions or block statement .
+254	returns the class used for this resource .
+255	the object that methods ( such as " find " .
+256	create a missing file if the path is valid .
+257	return a pathname which is substituted by string .
+258	iterates over each component of the path .
+259	iterates over and yields a new pathname object for each element in the given path in descending order .
+260	iterates over and yields a new pathname object for each element in the given path in ascending order .
+261	returns the children of the directory ( files and subdirectories .
+262	chop basename ( path ) -> [ pre - basename .
+263	split names ( path ) -> prefix .
+264	clean the path simply by resolving and removing excess " .
+265	trailing separator? ( path ) -> boo .
+266	* io * .
+267	* find * pathname .
+268	calculates the c checksum based on checksum value .
+269	calculates the k checksum based on checksum values with c checksu .
+270	returns an instance of magickimag .
+271	annotate a pdfwriter document with the barcode valid options are x .
+272	converts the barcode s encoding ( a string containing 1s and 0s ) to true and false values ( 1 == true == " black bar " ) if the barcode is 2d .
+273	collects continuous groups of bars and spaces ( 1 and 0 ) into arrays where the first item is true or false ( 1 or 0 ) and the second is the size of the group for example .
+274	takes a hash and temporarily sets properties on self ( the outputter object ) corresponding with the keys to their values .
+275	returns the encodable characters .
+276	takes an array of wide / narrow values and returns the string representation for those bars and spaces .
+277	creates a pngcanvas object and renders the barcode on i .
+278	create a chunkypngdatastream containing the barcode image constraints - value is passed on to chunkypngimage .
+279	set the data for this barcode .
+280	set the extra for this barcode .
+281	get an array of the individual characters for this barcode .
+282	calculate the checksum for the data in this barcode .
+283	generate encoding for an array of w .
+284	render the barcode onto a cairo contex .
+285	render the barcode to a png imag .
+286	render the barcode to a ps documen .
+287	render the barcode to a pdf documen .
+288	render the barcode to an svg documen .
+289	encodes an array of interleaved w or n bars and spaces ex [ w .
+290	@param [ hash ] params @return [ hash ] .
+291	@param [ string ] xpath @param [ regexp ] pattern @param [ typhoeusresponse .
+292	@param [ regexp ] pattern @param [ typhoeusresponse .
+293	@param [ regexp ] pattern @param [ typhoeusresponse .
+294	@param [ typhoeusresponse .
+295	@param [ string .
+296	@param [ typhoeusresponse ] res @param [ string ] xpath @yield [ addressableuri .
+297	for sanity @return [ boolean ] .
+298	@param [ controllerbase ] controller @retun [ controllers ] sel .
+299	set the threads attribute and update hydra accordinly if the throttle attribute is > 0 .
+300	hook to be able to have an exit code returned depending on the findings / errors noco .
+301	nocov @return [ integer ] the exit code related to the run erro .
+302	checks if the remote website is up .
+303	@param [ string ] url @return [ string ] the redirection url or nil as webmock does not support redirects mocking .
+304	perform a head request to the path provided .
+305	get a connection to the databas .
+306	make sure a commit exist .
+307	retrieve commits for a repository .
+308	get the parents for a specific commit .
+309	make sure that a commit has been associated with the provided repo ==parameters [ user ] the user that owns the repo this commit has been submitted to [ repo ] the repo receiving the commit [ sha ] the commit sh .
+310	add ( or update ) an entry for a commit author .
+311	ensure that a user exists .
+312	ensure that a user exists .
+313	get all followers for a user .
+314	make sure that a user follows another on .
+315	get details about the languages used in the repositor .
+316	make sure that the organizations the user participates into exist ==parameters [ user ] the login name of the user to check the organizations fo .
+317	make sure that a user participates to the provided organization ==parameters [ user ] the login name of the user to check the organizations for [ org ] the login name of the organization to check whether the user belongs i .
+318	make sure that an organization exists ==parameters [ organization ] the login name of the organizatio .
+319	get all comments for a commit ==parameters [ user ] the login name of the organization [ user ] the repository containing the commit whose comments will be retrieved [ sha ] the commit sha to retrieve comments fo .
+320	make sure that all watchers exist for a repositor .
+321	make sure that a watcher / stargazer exists for a repositor .
+322	process all pull request .
+323	adds a pull request history even .
+324	checks whether a pull request concerns two branches of the same repositor .
+325	produces a log messag .
+326	get all forks for a project .
+327	make sure that a fork is retrieved for a projec .
+328	make sure all issues exist for a projec .
+329	retrieve and process all events for an issu .
+330	retrieve and process all comments for an issue .
+331	retrieve and process +comment id+ for an +issue id .
+332	retrieve repository issue label .
+333	retrieve a single repository issue label by nam .
+334	ensure that all labels have been assigned to the issu .
+335	ensure that a specific label has been assigned to the issu .
+336	run a block in a db transaction .
+337	store a commit contained in a hash .
+338	dates returned by github are formatted as - yyyy - mm - ddthhmmssz - yyyy / mm / dd hhmmss + / - hhm .
+339	log a message at the given level .
+340	check whether the resource identified by the provided url has change .
+341	determine the number of pages contained in a multi - page api respons .
+342	parse a github link heade .
+343	parse the json result arra .
+344	do the actual request and return the result objec .
+345	attach to a specific ip address if the machine has multipl .
+346	factory method for retrieving persistence connections .
+347	retrieve a single commit from a rep .
+348	retrieve commits starting from the provided +sha .
+349	retrieve organizations the provided user participates int .
+350	retrieve organization member .
+351	retrieve all comments for a single commi .
+352	retrieve a single commen .
+353	retrieve all watchers for a repositor .
+354	retrieve a single watcher for a repositor .
+355	get all events for the specified repo .
+356	retrieve diff between two branches .
+357	retrieve the default branch for a repo .
+358	specify and parse top - level command line options .
+359	examine the validity of the provided options in the context of the executed command .
+360	specify a handler to incoming messages from a connection to a queue .
+361	read the value for a key whose format is " foo .
+362	overwrite an existing +key+ whose format is " foo .
+363	given a location string .
+364	standard filtering on all locations used by ghtorren .
+365	checks if we met all the topics requirements .
+366	checks if we met all the options requirements before sending them to the producer .
+367	takes all the messages from the buffer and delivers them one by one @note this method is executed after the validation .
+368	this method allow us to respond to a single topic with a given data .
+369	informs monitoring about trapped signal @param [ symbol ] signal type that we received @note we cannot perform logging from trap context .
+370	looks up ids in a list of embedding tensors .
+371	parsers a protobuf file and spits out a ruby has .
+372	assert the condition x == y holds element - wise .
+373	constructs symbolic derivatives of ys of input w .
+374	outputs random values from a normal distribution .
+375	construct an identity matri .
+376	the glorot uniform initializer .
+377	initializer that generates tensors with a uniform distribution .
+378	extracts a slice from a tensor .
+379	creates a tensor with all elements set to 1 .
+380	returns the truth value of x and y element - wise .
+381	computes the mean of elements across dimensions of a tensor .
+382	concatenates tensors along one dimension .
+383	partitions data into num partitions tensors using indices from partition .
+384	return true fn ( ) if the predicate pred is true else false fn ( ) .
+385	return the elements .
+386	computes asin of input element - wis .
+387	computes acos of input element - wis .
+388	computes atan of input element - wis .
+389	returns element - wise integer divistion .
+390	casts a tensor to a new type .
+391	prints a list of tensors .
+392	returns the truth value of ( x ! = y ) element - wise .
+393	reates a tensor with all elements set to zero .
+394	creates a tensor with all elements set to 1 .
+395	returns x * y element - wise .
+396	computes sec of input element - wise .
+397	computes sqrt of input element - wise .
+398	computes natural logarithm of x element - wise .
+399	computes natural logarithm of ( 1 + x ) element - wise .
+400	computes exponential of x element - wise .
+401	checks a tensor for nan and inf values .
+402	gather slices from params and axis according to indices .
+403	stacks a list of rank - r tensors into one rank - ( r+1 ) tensor .
+404	unpacks the given dimension of a rank - r tensor into rank - ( r - 1 ) tensors .
+405	computes the difference between two lists of numbers or strings .
+406	create a case operation .
+407	same as op but with a marker that it was internal generate .
+408	explicit broadcasting helpe .
+409	handle 2 tensor math operation .
+410	general case transposition with flat array .
+411	returns x + y element - wise .
+412	returns the index with the largest value across axes of a tensor .
+413	returns element - wise smallest integer in not less than x @param input a tensor x ( of type floating point types ) options @option name optional name @return tenso .
+414	computes cos of input element - wise .
+415	returns x / y element - wise .
+416	returns the truth value of ( x == y ) element - wise .
+417	returns element - wise largest integer not greater than x .
+418	returns element - wise integer divistion .
+419	returns the truth value of ( x > y ) element - wise .
+420	returns the truth value of ( x >= y ) element - wise .
+421	returns the truth value of ( x < y ) element - wise .
+422	returns the truth value of ( x <= y ) element - wise .
+423	multiplies matrix a by matrix b .
+424	returns the max of x and y ( i .
+425	returns element - wise remainder of division .
+426	returns x * y element - wise .
+427	returns the truth value of ( x ! = y ) element - wise .
+428	creates a tensor with all elements set to 1 .
+429	computes the power of one value to another x ^ y element wise this operation supports broadcasting @param input a tensor x @param input b tensor y options @option name optional name @return tenso .
+430	computes the product of elements across dimensions of a tensor .
+431	outputs random values from a uniform distribution .
+432	creates a sequence of numbers .
+433	returns the rank of a tensor @param input a tensor options @option name optional name @return tenso .
+434	rounds the values of a tensor to the nearest integer .
+435	computes reciprocal of square root of x element - wise .
+436	this operation returns a 1 - d integer tensor representing the shape of input @param input a tensor options @option name optional name @option out type optional output type default ( int32 ) @return tenso .
+437	computes sigmoid of x element - wise .
+438	computes sin of input element - wise .
+439	returns the size of a tensor .
+440	extracts a strided slice of a tensor this op extracts a slice of size ( end - begin ) / stride from the given input tensor .
+441	returns x - y element - wise .
+442	computes the sum of elements across dimensions of a tensor .
+443	computes tan of input element - wise .
+444	computes tanh of input element - wise .
+445	finds values and indices of the k largest entries for the last dimension .
+446	creates a tensor with all elements set to zero @param shape a 1 - d integer tensor or ruby array .
+447	utility class to convert variables to constants for production deploymen .
+448	returns a context manager that specifies the default device to use .
+449	loads a model yaml file and builds the model from it args buffer string - string in yaml format of the model returns graph where model is restored t .
+450	list available evaluators + devices in the current local environment returns - an array containing the names of those device .
+451	creates a variable a variable maintains state across session .
+452	defines a variable context manage .
+453	creates a session context where operations can be executed args evaluator specific evaluator to use .
+454	inserts a placeholder for a tensor that will be always fed .
+455	check to make sure passed array is dens .
+456	auto cast ruby constant data types to the same tensor types of other operand .
+457	workspaces @ ! method create workspace ( name nil .
+458	@ ! method list workspaces ( page limit nil .
+459	@ ! method update workspace ( workspace id .
+460	@ ! method update intent ( workspace id .
+461	entities @ ! method create entity ( workspace id .
+462	@ ! method update entity ( workspace id .
+463	comparison @ ! method compare documents ( file 1 .
+464	feedback @ ! method add feedback ( feedback data .
+465	identification @ ! method identify ( text ) identify language .
+466	models @ ! method create model ( base model id .
+467	events and feedback @ ! method create event ( type .
+468	pad a string out to n characters with zeros @param [ integer ] n the length of the resulting string @param [ string ] message the message to be padded @raise [ rbnacllengtherror ] if the string is too long @return [ string ] a string .
+469	check the length of the passed in string in several places through the codebase we have to be very strict with what length of string we accept .
+470	check a passed in string .
+471	check a passed string is it valid raise an error if passed argument is invalid @raise [ typeerror ] if string cannot convert to a string with .
+472	compare two 64 byte strings in constant time this should help to avoid timing attacks for string comparisons in your application .
+473	compare two 64 byte strings in constant time this should help to avoid timing attacks for string comparisons in your application .
+474	compare two 32 byte strings in constant time this should help to avoid timing attacks for string comparisons in your application .
+475	compare two 32 byte strings in constant time this should help to avoid timing attacks for string comparisons in your application .
+476	compare two 16 byte strings in constant time this should help to avoid timing attacks for string comparisons in your application .
+477	compare two 16 byte strings in constant time this should help to avoid timing attacks for string comparisons in your application .
+478	compute authenticator for message @param [ .
+479	verifies the given authenticator with the message .
+480	encrypts the message with a random nonce encrypts the message with a random nonce .
+481	decrypts the ciphertext with a random nonce takes a ciphertext .
+482	after a fork the appender thread is not running .
+483	backward compatibilit .
+484	give each appender its own logger for logging .
+485	dynamically supply the log level with every measurement cal .
+486	log a thread backtrac .
+487	add the tags or named tags to the list of tags to log for this thread whilst the supplied block is active .
+488	whether to log the supplied message based on the current filter if an .
+489	log message at the specified leve .
+490	measure the supplied block and log the messag .
+491	for measuring methods and logging their duration .
+492	returns a logger instance return the logger for a specific class .
+493	assign named arguments to this log entry .
+494	assign positional arguments to this log entry .
+495	call the block for exception and any nested exceptio .
+496	returns [ string ] the exception backtrace including all of the child / caused by exception .
+497	returns [ string ] the duration in human readable for .
+498	extract the filename and line number from the last entry in the supplied backtrac .
+499	returns [ string .
+500	deprecated use semanticloggerformattersra .
+501	returns a human readable string that contains +corrections+ .
+502	nodoc this code is based directly on the text gem implementation copyright ( c ) 2006 - 2013 paul battley .
+503	used by flor when it looks up for a variable and finds nothing .
+504	called by florscheduler .
+505	by default .
+506	nb logger configuration entries start with " hok " .
+507	dumps all or some of the executions to a json string .
+508	def procedures ( path ) .
+509	avoid the proc / cancel problem upstreams in confexecutor .
+510	todo eventually merge with waiter .
+511	def procedures ( path ) .
+512	create table flor timers do primary key id .
+513	" tasker " .
+514	delete tables in the storage database that begin with " flor " and have more than 2 columns ( the sequel schema info table has 1 column as of this writing ) .
+515	return a florexecution instance linked to this mode .
+516	returns the node hash linked to this mode .
+517	given a nid .
+518	this saves the modified trees in the parent when the node is removed it works ok except for 3 ( 2017 - 05 - 9 ) failing specs .
+519	return an empty array of new messages .
+520	create table flor traps do primary key id .
+521	returns true if the trap should be removed from the execution s list of trap .
+522	create a new mixlibcli class .
+523	the option parser generated from the mixlib - cli dsl .
+524	calls worker .
+525	blocks on locking a job .
+526	attempt to lock a job in the queue s table .
+527	a job is processed by evaluating the target code .
+528	each job includes a method column .
+529	enqueue ( m .
+530	enqueue at ( t .
+531	enqueue in ( t .
+532	title \ t \ tlegend \ t \ txaxis \ t \ tyaxis \ t \ ttooltip \ tcredits plotoption .
+533	pass other methods through to the javascript high chart object .
+534	add a simple series to the graph data = [ [ 0 .
+535	params can be an array or a has .
+536	initially borrowed from omniauth - ca .
+537	rubocopdisable metrics / perceivedcomplexit .
+538	initiates run of the remote command and yields the data when available .
+539	when a remote server disconnects .
+540	decide if the execution should fail or no .
+541	register a new function @example store .
+542	imports proc ( s ) to the collection from another module @privat .
+543	creates new immutable collection from the current one .
+544	creates new immutable collection from the current one .
+545	creates new immutable collection from the current one .
+546	builds the transformation @param [ proc .
+547	register a new function @example store .
+548	gets the procedure for creating a transproc @param [ .
+549	return a simple ast representation of this function @return [ array ] @api publi .
+550	converts a transproc to a simple proc @return [ proc ] .
+551	maps replacement keys to their value .
+552	interpolates a string with data from matches if specifie .
+553	run commands prior to each tab context .
+554	run commands in the conext of a window .
+555	run commands in the context of a tab .
+556	store commands to run in context .
+557	writes the command for write operation .
+558	writes the command for delete operation .
+559	writes the command for touch operation .
+560	writes the command for exist operation .
+561	writes the command for get operations ( all bins ) .
+562	writes the command for get operations ( specified bins ) .
+563	writes the command for getting metadata operation .
+564	implements different command operation .
+565	generic header write .
+566	header write for write operations .
+567	newexecutetask initializes task with fields needed to query server nodes .
+568	parse all results in the batch .
+569	nodoc parse all results in the batch .
+570	nodoc parse all results in the batch .
+571	parse all results in the batch .
+572	initialize server node with connection parameters .
+573	parses the given byte buffer and populate the result object .
+574	converts an absolute expiration time ( in seconds from citrusleaf epoch ) to relative time - to - live ( ttl ) in second .
+575	returns a random node on the cluste .
+576	find a node by name and returns an error if not foun .
+577	refresh status of all nodes in cluster .
+578	prepends bin values string to existing record bin values .
+579	read record generation and expiration only for specified key .
+580	check if multiple record keys exist in one batch call .
+581	register package containing user defined functions with server .
+582	removeudf removes a package containing user defined functions in the server .
+583	listudf lists all packages containing user defined functions in the server .
+584	execute user defined function on server and return results .
+585	execute udf on query applies user defined function on records that match the statement filter .
+586	create secondary index .
+587	delete secondary index .
+588	scannode reads all records in specified namespace and set .
+589	remove user from cluster .
+590	change user s password .
+591	add roles to user s list of roles .
+592	retrieve all users and their roles .
+593	fetches and return the first record from the queue if the operation is not finished and the queue is empty it blocks and waits for new records it sets the exception if it reaches the eof mark .
+594	fetches and returns all the records from the queue until the whole operation is finished and it reaches an eof mark calling cancel inside the each block raises an exception to signal other consumer thread .
+595	this helper allows custom data attributes to be added to a user for the current request from within the controller .
+596	generate an intercom script tag .
+597	moves this object .
+598	causes the object to move in cycles across multiple given points ( the first point in the array is the first point the object will move towards .
+599	nodoc creates a new ramp .
+600	checks if an object is intersecting this ramp ( inside the corresponding right triangle and at the floor level or above ) .
+601	returns the position in the screen corresponding to the given tile indices .
+602	returns the tile in the map that corresponds to the given position in the screen .
+603	verifies whether a tile is inside the map .
+604	iterates through the currently visible tiles .
+605	causes the sprite to animate through the +indices+ array exactly once .
+606	returns whether this sprite is visible in the given map ( i .
+607	adds a component to this panel .
+608	draws the button in the screen .
+609	sets the text of the text field to the specified value .
+610	sets the position of the text field in the screen .
+611	draws the text field in the screen .
+612	creates a new drop - down list .
+613	sets the currently selected value of the drop - down list .
+614	draws the drop - down list .
+615	draws text .
+616	add a new globalfitmessage to the mapper and return the local message number .
+617	get the local message number for a given globalfitmessage .
+618	create a new monitoring b object .
+619	create a new fitdatarecord .
+620	create a new fielddescription object .
+621	ensure that fitdatarecords have a deterministic sequence .
+622	redirect all log messages to the given io .
+623	create a new fitdatarecord .
+624	create a fitfileentity .
+625	create a new activity object .
+626	total distance convered by this activity purely computed by the gps coordinates .
+627	returns the computed vo2max value .
+628	write the activity data to a file .
+629	create a new session object .
+630	create a new globalfitmessage definition .
+631	define a new set of field alternatives for this message definition .
+632	in development .
+633	deliver the resource without running any validation .
+634	returns a hash of attributes .
+635	start solr and wait for it to become availabl .
+636	stop solr and wait for it to finish exitin .
+637	check the status of a managed solr servic .
+638	create a new collection in solr @param [ hash ] options @option options [ string ] name @option options [ string ] di .
+639	update the collection configuration in zookeeper @param [ hash ] options @option options [ string ] config name @option options [ string ] di .
+640	copy the collection configuration from zookeeper to a local directory @param [ hash ] options @option options [ string ] config name @option options [ string ] di .
+641	create a new collection .
+642	clean up any files solr wrapper may have downloade .
+643	rubocopdisable lint / rescueexception extract a copy of solr to instance dir does noting if solr already exists at instance dir @return [ string ] instance dir directory where solr has been installe .
+644	delete the underlying c++ instance after exec returns otherwise .
+645	add three methods .
+646	return a list of signals .
+647	adds another duration or a numeric to this duration .
+648	returns a new date / time at the end of the quarter .
+649	returns a new date / time representing the given day in the next week .
+650	returns a new date / time representing the given day in the previous week .
+651	returns the number of days to the start of the week on the given day .
+652	formats a +number+ into a us phone number ( e .
+653	create progress bar @param [ string ] format the tokenized string that displays the output @param [ hash ] options @option options [ numeric ] total the total number of steps to completion @option options [ numeric ] width the maximum width for the bars display including all formatting options @option options [ boolean ] no width true when progression is unknown defaulting to false @option options [ boolean ] clear whether or not to clear the progress line @option options [ boolean ] hide cursor display or hide cursor @option options [ object ] output the object that responds to print call defaulting to stderr @option options [ number ] frequency the frequency with which to display bars @option options [ number ] interval the period for sampling of speed measurement @api public reset progress to default configuration @api publi .
+654	advance the progress bar @param [ object | number ] progress @api publi .
+655	iterate over collection either yielding computation to block or provided enumerator .
+656	update configuration options for this bar @param [ hash [ symbol ] ] options the configuration options to update @api publi .
+657	render progress to the output @api privat .
+658	move cursor to a row of the current bar if the bar is rendered under a multibar .
+659	write out to the output @param [ string ] data @api privat .
+660	end the progress @api publi .
+661	stop and cancel the progress at the current position @api publi .
+662	log message above the current progress bar @param [ string ] message the message to log out @api publi .
+663	pad message out with spaces @api privat .
+664	reschedule the job in the future ( when a job fails ) .
+665	lock this job for this worker .
+666	loads all of our tracery files into our +files+ hash if a file is named default then we load that into +grammar+ @param dir [ string ] path to the directory containing the tracery rule .
+667	a shortcut fuction for expanding text with tracery before posting @param text [ string ] the tracery text to expand before posting @param options [ hash ] a hash of arguments to pass to post @option options rules [ string ] the grammar rules to load @option options visibility [ string ] visibility level @option options spoiler [ string ] text to use as content warning @option options reply id [ string ] id of post to reply to @option options hide media [ bool ] should we hide media? @option options media [ array < string > ] array of file path .
+668	starts a loop that checks for any notifications for the authenticated user .
+669	replies to the last mention the bot recieved using the mention s visibility and spoiler with +text+ automatically includes an @ for the account that mentioned the bot .
+670	replies to the last post and tags everyone who was mentioned ( this function respects .
+671	starts a loop that checks for mentions from the authenticated user account running a supplied block or .
+672	stores select data about a post into a hash for later use @param mention [ mastodonstatus ] the most recent mention the bot receive .
+673	creates the stream clien .
+674	adds the command and block into the bot to process later also sets up the command regex @param cmd [ string ] a command to add @param block [ proc ] the code to execute when +cmd+ is recieve .
+675	starts loop to process any mentions .
+676	parse the service name from a path .
+677	write data to the server use .
+678	returns a response from the server raises nettcpclientconnectiontimeout when the time taken to create a connection exceeds the connect timeout connection is closed raises nettcpclientconnectionfailure whenever socket raises an error such as erroreaccess etc .
+679	write and / or receive data with automatic retry on connection failure on a connection failure .
+680	close the socket only if it is not already closed logs a warning if an error occurs trying to close the socke .
+681	connect to one of the servers in the list .
+682	returns [ socket ] connected to supplied address address [ nettcpclientaddress ] host name .
+683	connect to server raises nettcpclientconnectiontimeout when the connection timeout has been exceeded raises nettcpclientconnectionfailur .
+684	try connecting to a single server returns the connected socket raises nettcpclientconnectiontimeout when the connection timeout has been exceeded raises nettcpclientconnectionfailur .
+685	raises nettcpclientconnectionfailure if the peer certificate does not match its hostnam .
+686	party mode ! join all speakers into a single group .
+687	look for sonos devices on the network and return the first ip address found @return [ string ] the ip address of the first sonos device foun .
+688	find all of the sonos devices on the network @return [ array ] an array of topologynode object .
+689	find a single resource by the resource id @param id [ string ] the resource id @return [ object ] the type object respons .
+690	get all resources from a query by paging through data @return [ array < object > ] array of resource .
+691	when calling validates it should create the vali instance already and set @klass there ! .
+692	discuss can we achieve that somehow via features in build inline .
+693	moved from reform as not applicable to dr .
+694	nodoc updates the attribute in the given xml block to the value provided .
+695	updates the text in the given xml block to the value provided .
+696	updates the composed xml object in the given xml block to the value provided .
+697	updates the composed xml object in the given xml block to the value provided .
+698	nodoc returns an xml object representing this objec .
+699	calculates the payment on interest for an investment based on constant - amount periodic payments and a constant interest rate .
+700	calculates the number of payment periods for an investment based on constant - amount periodic payments and a constant interest rate .
+701	calculates the periodic payment for an annuity investment based on constant - amount periodic payments and a constant interest rate .
+702	calculates the interest rate of an annuity investment based on constant - amount periodic payments and the assumption of a constant interest rate .
+703	calculates the net present value of an investment based on a series of periodic cash flows and a discount rate .
+704	calculates the internal rate of return on an investment based on a series of periodic cash flows .
+705	this method was borrowed from the numpy rate formula which was generated by sag .
+706	simple mean formula sum elements and / by length @param numbers ary [ array ] an array of numbers to calculate the mean @return [ float ] @example exonio .
+707	median formula @param numbers ary [ array ] an array of numbers @return [ float ] @example exonio .
+708	geckoboard - ruby gem s dataset .
+709	=begin \ t \ t .
+710	tries to get a dirent for path .
+711	load document from file .
+712	could be useful with mis - behaving ole documents .
+713	try to load an embedded object ; call out to the api if no .
+714	requests come in as url / params pair .
+715	take the api response and figure out what it i .
+716	call contract functions by rpc call method @param method [ symbol | string ] the method name you call @param params [ array ] the method params you call @param tx [ hash ] see rpc call doc for more info @return [ any ] .
+717	call contract functions by sendrawtransaction @param tx [ hash | citatransaction ] @param private key [ string ] hex string @param method [ symbol | string ] method name you call @param * params [ array ] your params @return [ nil | hash ] hash " " .
+718	parse url to host .
+719	wrapper web3eth abi encoder for encoded dat .
+720	wrapper for call rpc method @param method [ string ] method you want to call @param jsonrpc [ string ] jsonrpc version @param params [ array ] rpc params @param id [ integer ] jsonrpc id @return [ faradayresponse ] .
+721	wrapper for rpc params @param method [ string ] method you want to call @param jsonrpc [ string ] jsonrpc version @param params [ array ] rpc params @param id [ integer ] jsonrpc id @return [ string ] json strin .
+722	wrapper faraday object with cita url and content - type @return [ faraday ] .
+723	easy to transfer tokens @param to [ string ] to address @param private key [ string ] @param value [ string | integer ] hex string or decimal integer @param quota [ integer ] default to 30 000 @return [ hash ] .
+724	replace the current storage with the given one .
+725	call the block between a [ .
+726	convert the storage to json .
+727	time the given block with the given label .
+728	group the given block .
+729	group the given block but collapse it .
+730	create a new cookies wrapper .
+731	rubocopdisable metrics / methodlength rubocopdisable metrics / cyclomaticcomplexity rubocopdisable metrics / perceivedcomplexit .
+732	rubocopenable metrics / cyclomaticcomplexity rubocopenable metrics / methodlength rubocopenable metrics / perceivedcomplexity rubocopenable metrics / blocknestin .
+733	rubocopdisable metrics / cyclomaticcomplexity rubocopdisable metrics / methodlength rubocopdisable metrics / perceivedcomplexity rubocopdisable metrics / blocknestin .
+734	rubocopenable metrics / cyclomaticcomplexity rubocopenable metrics / methodlength rubocopenable metrics / perceivedcomplexity rubocopenable metrics / blocknestin .
+735	rubocopdisable metrics / methodlengt .
+736	internal the savon client to send soap requests with .
+737	internal performs a soap request .
+738	internal calls the authentication handler .
+739	public unzips the returned zip file to the location .
+740	internal unzips source to destination .
+741	internal writes the zip file content to a temporary location so it can be extracted .
+742	internal starts a heart beat in a thread .
+743	internal starts the run loop .
+744	public perform the login request .
+745	internal savon client .
+746	public parses a package .
+747	internal creates a zip file with the contents of the directory .
+748	creates a new object with given uuid .
+749	creates a new group with given uuid .
+750	creates a new group with given uuid .
+751	creates a file reference with given uuid .
+752	adds the file reference with given uuid .
+753	@param [ string ] root path the path provided will be used for detecting xcode project and seedfile .
+754	read xcode project .
+755	removes disused seeds .
+756	installs new seeds or updates existing seeds .
+757	installs new seed or updates existing seed in .
+758	append seed name as a prefix to file name and returns the path .
+759	adds source files to the group seeds and save its reference to .
+760	determines whether there s a source file .
+761	create an aspell speller object @return [ aspell ] the speller objec .
+762	evaluate the files to check @return [ array < string > ] list of file .
+763	read a yaml config fil .
+764	print the duplicate dictionary entries @param dict1 [ array < string > ] the first dictionary @param dict2 [ array < string > ] the second dictionar .
+765	return the merged global and the custom spell configs @return [ hash ] the merged configuration to us .
+766	check the file using the spellchecker @param file [ string ] file name @return [ boolean ] true on success ( no spelling error found ) .
+767	execute a rake / capistrano task only for given server @param server [ capistranoconfigurationserver ] server to execute task @param task [ string ] name of rake / capistrano task @param args [ array ] arguments of rake / capistrano tas .
+768	@param [ optbase ] opt @return [ array < string > ] .
+769	@param [ string ] value @return [ hash ] .
+770	@param [ hash ] values @return [ hash ] .
+771	@param [ string ] value @return [ range ] .
+772	see optbase .
+773	initialize attrs create if set to true .
+774	if the path does not exist .
+775	@param [ array ] option see optionparser .
+776	apply each methods from attrs [ normalize ] to the value if possible user input should not be used in this attrs [ normalize ] e .
+777	@param [ array < optbase > ] options @return [ self ] for chaining .
+778	ensures the opt given is valid @param [ optbase ] opt @return [ void ] .
+779	@param [ optbase ] opt @return [ void ] .
+780	ensure that all required options are supplied should be overriden to modify the behavior @return [ void ] .
+781	@param [ string ] value @return [ hash ] the parsed headers in a hash .
+782	@param [ string ] value @return [ string ] .
+783	@param [ string ] file path @return [ self ] .
+784	@param [ string ] value @return [ integer ] .
+785	conversions get entities of files in di .
+786	fix an entity time -> dostime object .
+787	create ascii - 8bits string .
+788	compression operations pack file and directory entities and output to stream .
+789	pack symlinks if its link path exists in zi .
+790	rubocopdisable metrics / parameterlists rubocopenable metrics / parameterlists reektoomanystatement .
+791	rubocopdisable metrics / linelengt .
+792	rubocopenable metrics / linelengt .
+793	rubocopdisable metrics / parameterlists rubocopdisable metrics / linelengt .
+794	see uibibzuicorecomponent .
+795	see uibibzuicorecomponent .
+796	add header which is a componen .
+797	add body which is a componen .
+798	add group list see uibibzuicorelis .
+799	see uibibzuicorecomponent .
+800	see uibibzuicorecomponent .
+801	see uibibzuicoreformschoicesbutton .
+802	maybe create a class for td conten .
+803	add header which is a componen .
+804	see uibibzuicorecomponent .
+805	add body div which is a componen .
+806	add footer which is a componen .
+807	add list group which is a componen .
+808	add image which is a componen .
+809	see uibibzuicorecomponent .
+810	add navbar nav items see uibibzuicorenavbarna .
+811	add navbar form items see uibibzuicorenavbarfor .
+812	not use ! ! ! ! ! add navbar text items see uibibzuicorenavbartex .
+813	see uibibzuicorecomponent .
+814	add breadcrumb link items see uibibzuicorebreadcrumblin .
+815	see uibibzuicorecomponent .
+816	include willpaginateactionviewbootstraplinkrenderer initialize pagination with component item pagination require willpaginate gem render html tag with boostrap pagination them .
+817	see uibibzuicoreboxescomponent .
+818	try to put it on a lin .
+819	add nav link items see uibibzuicorenavigationsnavlin .
+820	add nav dropdown items see uibibzuicorenavigationsnavdropdow .
+821	add nav link items see uibibzuicorenavigationsnavlin .
+822	add header which is a componen .
+823	add body which is a componen .
+824	see uibibzuicorecomponent .
+825	know if component is tapped or no .
+826	override this method to add html dat .
+827	add html data argument .
+828	add header which is a componen .
+829	add header which is a componen .
+830	see uibibzuicoreboxescard .
+831	add link action in tabl .
+832	create an rails plugin engine for documentation sit .
+833	copy parts of the engine scaffold into site director .
+834	if underscore keys .
+835	convert hashes to sass map synta .
+836	alias method print .
+837	def build sale data ( price .
+838	create a new railsengin .
+839	find files based on class type and return an array of classes for each fil .
+840	find files by class type and extensio .
+841	convert configuration into instance variable .
+842	handles running threaded command .
+843	watch assets for changes and buil .
+844	todo / fix pass in known grounds as a parameter? why? why not? todo / fix remove =nil in para - make param required w / o fallbac .
+845	todo / fix remove =nil in para - make param required w / o fallbac .
+846	method find rsssf scores ! .
+847	method find rsssf round ! .
+848	fix / todo check that [ round .
+849	method parse goals =begin .
+850	lets us use match teams for country etc .
+851	replace images newer versions of libreoffice can t open files with duplicates image name .
+852	get the hash of the key and value specified for the scope .
+853	convert pkey string value to hash .
+854	get paramters for sort action .
+855	get paramters for update record .
+856	check if there are inconsistent scopes in update parameter .
+857	number tokens are added to the bucket every period seconds ( up to a max of number tokens being available ) .
+858	acquire a resource from the semaphore .
+859	release a resource back to the semaphore .
+860	creates a notification object .
+861	shows a new notification .
+862	updates a previously shown notification or creates a new one .
+863	returns a usable youtube - dl executable ( system or vendor ) @param exe [ string ] executable to search for @return [ string ] executable pat .
+864	helper for doing lines of cocaine ( initializing .
+865	instantiate new model @param url [ string ] url to initialize with @param options [ hash ] options to populate the everything with download the video .
+866	redirect methods for information getting @param method [ symbol ] method name @param args [ array ] method arguments @param block [ proc ] explict block @return [ object ] the value from @informatio .
+867	parses options and converts them to cocaine s syntax @return [ string ] commands ready to do cocain .
+868	merge options with given hash .
+869	option getting and setting using ghost methods @param method [ symbol ] method name @param args [ array ] list of arguments passed @param block [ proc ] implicit block given @return [ object ] the value of method in the options stor .
+870	calls a block to do operations on keys see sanitize keys ! for examples @param block [ proc ] block with operations on keys @yieldparam key [ object ] original key @yieldreturn [ object ] manipulated ke .
+871	symbolizes and sanitizes keys in the option store @return [ object ] @stor .
+872	allowable options are - environment e .
+873	we pass ourselves as both input and output to ernicorn .
+874	todo move into separate class so we dont pollute controller .
+875	central entry - point for finding the appropriate representer .
+876	called when the new method is invoked sets a variable field that can be recalle .
+877	set the home position of the label all other x and y coordinates are relative to thi .
+878	draws a square border on dot in widt .
+879	prints a bar code in barcode39 fon .
+880	prints a bar code in barcode39 fon .
+881	prints a bar code in barcode39 fon .
+882	some barcodes .
+883	draws the pdf rectangle ( border ) .
+884	draws the pdf bar code 3 .
+885	called when the new method is invoked adds a variable that is to be applied to the saved templat .
+886	returns true if object is a new record and slugs are presen .
+887	returns true if object has been persisted and has changes in the slu .
+888	return all possible locales for model avoiding usage of i18n .
+889	internal assigns the request id thread - local variable .
+890	return the distance of time in words from the given from time to the specified to time .
+891	get the approximate disntance of time in words from the given from time to the the given to time .
+892	first attempt at centralizing error notification .
+893	process a file .
+894	process the specified batch fil .
+895	execute all preprocessor .
+896	execute all postprocessor .
+897	execute all dependencie .
+898	add new field which will be saved into redis * name - name of your variable * type - type of your variable ( integer .
+899	set redis key which will be used for storing mode .
+900	set redis model to normalize redis key .
+901	store informations about redis aliase .
+902	old method to initialize redis model extenstion usage redis model conf = fields = > integer = > to i .
+903	generates redis key for storing object * will produce something like your classkeyfield value1field value2 .
+904	generates redis key for storing indexes for dynamic aliases will produce something like your classdynamicname of your dynami aliasfield value2field value1 .
+905	check if key by arguments exists in d .
+906	check if key by alias name and arguments exists in d .
+907	return one item of redis key ( will decide to input value or to add * for search ) .
+908	validates if key by arguments is valid ( all needed fields are not nil ! ) .
+909	validates if key by alias name and arguments is valid ( all needed fields are not nil ! ) .
+910	validate one item of redis ke .
+911	look for bad cofiguration in redis key and raise argument erro .
+912	take all arguments and send them ou .
+913	find methods find method for searching in redis *args ( integer ) - search by id *args ( hash ) - search by arguments in redis ke .
+914	find method for searching in redi .
+915	get by arguments fastest method to get object from redis by getting it by arguments *args ( integer ) - search by id *args ( hash ) - search by arguments in redis ke .
+916	get by redis keys fastest method to get object from redis by getting it by dynamic alias and argument .
+917	get by redis keys if you know redis key and would like to get objec .
+918	fastest method to get object from redis by getting it by alias and argument .
+919	create new object by hash values read all data from redis and create new instance ( used for find & get method ) .
+920	choose right type of value and then transform it for redi .
+921	convert value for valid format which can be saved in redi .
+922	convert value from redis into valid format in rub .
+923	save method - save all attributes ( fields ) and create aliase .
+924	create aliases ( create key value [ string ] key is alias redis key and value is redis key ) .
+925	update multiple attrubutes at onc .
+926	add entry to apple keychai .
+927	checks the response code for common errors .
+928	returns an array of nsqd addresses if there s an error .
+929	discovers nsqds from an nsqlookupd repeatedly opts nsqlookups [ 127 .
+930	@param [ hash ] args - all possible parameters - @option [ string ] controller class name - @option [ class ] controller class - @option [ string ] verb - @option [ string ] operation name - @option [ string ] model name - @option [ class ] model class - @option [ hash ] options postscontroller = > postoperationsverb apiv2postscontroller = > apiv2postoperationsver .
+931	in order of most specific .
+932	prints a tree - like representation of the elemen .
+933	try to parse the current element one more time if required .
+934	make a deep copy of the element dup recursively find a sub - element .
+935	present self and all repeats as an array with self being .
+936	the main method implementing ruby - like access methods for nested element .
+937	adds a repeat to a segment or loop .
+938	parses this segment out of a string .
+939	parse render all components of this segment as string suitable for ed .
+940	render returns a regexp that matches this particular segmen .
+941	finds a field in the segment .
+942	creates a parser out of a definition initialize parse a loop of a given name out of a string .
+943	parse make an empty loop to be filled out with informatio .
+944	recursively scan the loop and instantiate fields definitions for all its segment .
+945	instantiate segment s fields as previously define .
+946	def regexp @regexp | | = regexp .
+947	parse render all components of this loop as string suitable for ed .
+948	convert a hash ( and it s values recursively ) to nodeblueprints .
+949	format [ dollars ] [ cents ] only one is required .
+950	for manual use .
+951	normalizations get run before validation .
+952	audits get run explicitly .
+953	construct a new builder .
+954	add hexp objects to the current tag any hexpnode or other object implementing to hexp can be added with this operator .
+955	replace nodes in a tree with a css selector string like + " form .
+956	select nodes based on a css selector @param [ string ] css selector @yieldparam [ hexpnode ] @return [ hexpselector .
+957	set an attribute .
+958	* safely * evaluate a conditional expression @note this does not guarantee that conditions are correctly specified .
+959	check whether pid exists in the current process table .
+960	wait for process with pid pid to terminate and return its exit status code as an integer .
+961	upload the content of the modul .
+962	search backwards for all revision info .
+963	collect infos for a revisio .
+964	commit changes to sessio .
+965	get target revision for this module for workspace revisio .
+966	copy files from given source revision into destination di .
+967	status object for single revision +rev+ without status of ancestor .
+968	status object for a single module at +local path+ in revision +rev+ returns nil if there is no such module in this revisio .
+969	status object for the current file system content of dir this can by any directory even outside of any git working cop .
+970	creates a revstatus object for +rev+ with all modules assumend to be clea .
+971	export +revision+ of +mod+ into working copy beware any changes to the working copy target dir will be lost ! .
+972	sync all module changes into rim branc .
+973	check whether revision has a given ancesto .
+974	create default commit message from array of changed module .
+975	data in pmmap ext is an arra .
+976	data in pmmap grouped is a has .
+977	returns nil if checksum can t be calculated due to missing inf .
+978	returns the current branc .
+979	check whether remote branch exist .
+980	returns the sha - 1 representation of re .
+981	returns some informations about a revisio .
+982	returns the sha - 1 representations of the heads of all remote branche .
+983	export file contents of rev to dir if +paths+ is given and non - empty .
+984	checks out rev to a temporary directory and yields this directory to the given block if +paths+ is given and non - empty .
+985	returns a list of all files which changed in commit +rev+ together with the kind of the change ( modified .
+986	upload all module changes into corresponding remote repositorie .
+987	get revisions to upload i .
+988	fetch module +mod+ into the .
+989	prepare empty folder remove all files not on the ignore list and empty folder .
+990	def determine role ( args ) args [ atc ] == false ? role = " pilot " role = " all " args [ pilots ] == false ? role = " atc " role = role role = " all " if args [ pilots ] == false && args [ atc ] == false role en .
+991	assign the value to the given attribute of the ite .
+992	can be left in your tests as an alternative to build and to warn if your factory method ever starts producing invalid instance .
+993	look for errors in factories and ( optionally ) their traits .
+994	execute the requested factory method .
+995	send missing methods to view context firs .
+996	wrap an object or collection of objects with a presenter class .
+997	supported options tag prefix - use a custom prefix for git tags ( defaults to v ) publish the gem if its version has changed since the last release .
+998	constructor for all one dimensional interpolation operations .
+999	linear interpolation function .
+1000	reads the specified file as individual lines .
+1001	finds and initializes a lines selector that can handle the specified include .
+1002	@param attributes [ hash < string .
+1003	@param target [ string ] name of the source file to include as specified in the target slot of the include [ ] directive .
+1004	nodoc establishes a connection to the database that s used by all active record object .
+1005	internal methods append data as query params to an endpoin .
+1006	works just like the standard rand ( ) function .
+1007	create a core object .
+1008	render a set of radio buttons .
+1009	render a set of check boxes for selecting habtm - associated objects .
+1010	standard rails date selector .
+1011	integer select field .
+1012	submit button with smart default text ( if +value+ is nil uses " create " for new record or " update " for old record ) .
+1013	render a field label .
+1014	render a field set ( html < fieldset > ) .
+1015	render a group of habtm check boxes .
+1016	called when composing raw data .
+1017	take the following c struct for example struct mach header uint32 t magic ; / * mach magic number identifier * / cpu type t cputype ; / * cpu specifier * / cpu subtype t cpusubtype ; / * machine specifier * / uint32 t filetype ; / * type of file * / uint32 t ncmds ; / * number of load commands * / uint32 t sizeofcmds ; / * the size of all the load commands * / uint32 t flags ; / * flags * / which might be defined with rstruct as follows extend ( rstructclassmethods ) typedef uint32 t .
+1018	image resize @return [ image tag ] .
+1019	replacing rspec s default method missing implementation so that we can include our own special default hooks that allows spec tests to look more readable .
+1020	this method searches for folders and files in the assets root directory .
+1021	get paths and fils directory assets .
+1022	generate a unique fiel .
+1023	high level method to draw the paperback content on the pdf document @param qr code @param sixword lines @param sixword bytes @param labels @param passphrase sha @param [ integer .
+1024	generates a glob file pattern for the specified list of locales ( i .
+1025	generates subpatterns for the specified locale ( i .
+1026	produces and processes a report for use in the report method it takes the same arguments as report .
+1027	outputs a processed report with dange .
+1028	filters the files that haven t been modified in the current p .
+1029	updates the crc16 checksum .
+1030	remove accents .
+1031	class macro used to associate an enum with an attribute on an activerecord model .
+1032	belows are data types @return proc object which returns a random generated value .
+1033	delete an existing authorization .
+1034	get details on a single authorization .
+1035	update an existing authorization .
+1036	get details on a single rule for blacklisting keys for a given project .
+1037	update an existing comment .
+1038	list all glossaries the current user has access to .
+1039	create a new glossary .
+1040	get details on a single glossary .
+1041	get details on a single glossary term .
+1042	update an existing glossary term .
+1043	update an existing job locale .
+1044	list all job locales for a given job .
+1045	get details on a single key for a given project .
+1046	create a new project .
+1047	create a new release .
+1048	publish a release for production .
+1049	update an existing screenshot .
+1050	create a new screenshot marker .
+1051	delete an existing screenshot marker .
+1052	get details on a single screenshot marker for a given project .
+1053	show details for current user .
+1054	delete an existing tag .
+1055	get details on a single version .
+1056	converts values on the basis of unified tag name and value .
+1057	generates a hash representation of this instance with original tag names es keys and converted values as value .
+1058	getting the command - line arguments which would be executed when calling .
+1059	getting the command - line arguments which would be executed when calling .
+1060	private builds new instance of a circuitbreaker .
+1061	easy method to display a notificatio .
+1062	eager prints the result for stdout and stderr as it would be written when running the command from the terminal .
+1063	add a key / value to the map .
+1064	remove the entry associated with the key from the map .
+1065	iterate through all the key / value pairs in the map that have not been reclaimed by the garbage collector .
+1066	returns a new struct containing the contents of other and the contents of self .
+1067	create a strong reference to the object .
+1068	this implementation of a weak reference simply wraps the standard weakref implementation that comes with the ruby standard library .
+1069	add a key / value to the map .
+1070	remove the value associated with the key from the map .
+1071	iterate through all the key / value pairs in the map that have not been reclaimed by the garbage collector .
+1072	default middleware stack that uses default adapter as specified at configuration stage .
+1073	returns a fradayconnection objec .
+1074	initialise smartadapters delegator @param [ actioncontroller ] @param [ actiondispatchrequest ] @return [ smartadaptersadapterdelegator ] fetch adatapter base on request @raise [ smartadaptersexceptionsinvalidrequestformatexception ] @raise [ smartadaptersexceptionsinvalidrequestparamsexception ] @return [ smartadapters < controller > < action > < format > adapter ] .
+1075	find adapter for the given request ( resource .
+1076	for standard errors this method build a hash @return [ string ] json strin .
+1077	configure options and process basic authorizatio .
+1078	acts as setter and getter for api requests arguments parsing .
+1079	reset configuration options to their default .
+1080	parse filter query parameters and partition into an array .
+1081	retrieve the filters that do not provide category .
+1082	retrieve the filters that represent invalid full - text search values .
+1083	validate the requested filter query strings .
+1084	stores the original dimensions of the image as a serialized hash in to the mode .
+1085	ensures that the module will re - extend parametersclassmethods .
+1086	ensures that the module will initialize parameters .
+1087	sets the values of the class parameters .
+1088	adds a new parameters to the class .
+1089	determines if a class parameter exists with the given name .
+1090	searches for the class parameter with the matching name .
+1091	sets a class parameter .
+1092	iterates over the parameters of the class and it s ancestors .
+1093	wraps a field object and typecasts / builds item as an array of the given field .
+1094	create a new transaction @see transaction .
+1095	commit the transaction if no block is given .
+1096	execute a block within this transaction .
+1097	parse next message in buffe .
+1098	generates the reports @param query the base query that the reporter with start with [ filters will be applied on it ] @option options [ integer ] per page if given then overrides the default kaminari per page option @option options [ boolean ] custom view by default false .
+1099	renders a form field with label wrapped in an appropriate + < div > + .
+1100	renders a + < span > + with errors if there are any for the specified field .
+1101	infers the type of field to render based on the field name .
+1102	prepend is important ! otherwise dependent destroy on node < -> node map relation is executed first and no records ! all the answer nodes that follow from this nod .
+1103	default behaviour is to recurse up the chain ( goal is to hit a question node ) .
+1104	run all validations applied to this nod .
+1105	whether there is a valid answer path from this node to the root node for the instanc .
+1106	build a link from this node to another node building a link actually needs to throw off a whole new clone of all children node .
+1107	before a node is destroyed .
+1108	accept integer .
+1109	scale answers are considered answered if they have a value of greater than " 0 " .
+1110	text answers are considered answered if they have text entere .
+1111	recursively creates a copy of this entire node ma .
+1112	gets all the ancestor nodes until one is not an ancestor of klas .
+1113	gets all the child nodes until one is not an ancestor of klas .
+1114	check to see whether there is an infinite loop from this node ma .
+1115	validate the instance node value is greater than the minimu .
+1116	validate the instance node to ensure a minimum number of answers are mad .
+1117	answer nodes are valid if their questions are valid ! validate this node against an instanc .
+1118	returns the question that preceeds this answe .
+1119	returns the question that follows this answe .
+1120	removes the node map from this answer to its next questio .
+1121	gets index in sibling relationshi .
+1122	moves answer up relative to other answer .
+1123	moves answer down relative to other answer .
+1124	by default - answers build off the original question node this allows us to easily override the answer removal behaviour for different answer type .
+1125	by default - answers build off the original question node this allows us to easily override the answer building behaviour for different answer type .
+1126	accept integer or empty values must be within range of the number of ranking node .
+1127	calculate the number of rank nodes above this on .
+1128	calculate the number of rank nodes below this on .
+1129	validate the instance node valu .
+1130	all the connective edge .
+1131	stop validating at the question nod .
+1132	updates the answers of this question to a different typ .
+1133	build an answer off this nod .
+1134	removes the node map link from this question all of its next question .
+1135	returns the questions that follows this question ( either directly or via its answers ) .
+1136	before a node is destroyed .
+1137	returns and outputs a table for the given active record collectio .
+1138	finds the class representing the objects within the collectio .
+1139	@example adding a new sceneevent to the dictionary sceneeventdictionary .
+1140	return all the events for all the specified targets .
+1141	the writer for this view .
+1142	a tmx object currently has an array of points in a format list of strings .
+1143	define an animation from within another animation block .
+1144	register for mouse movements events .
+1145	register for a custom notification event .
+1146	fire the events mapped to the held buttons within the context of the specified target .
+1147	fire all events mapped to the matching notification .
+1148	fire a single event based on the matched notification .
+1149	add a model .
+1150	additional initializion is required to calculate the attributes that are going to be animated and to determine each of their deltas .
+1151	fire notification events within the current game stat .
+1152	an an event relay to the current game stat .
+1153	creation through controls is usually done with an instance eval of a block and this allows for a flexible interface .
+1154	creates a window and starts the game with the game parameters .
+1155	when the scene is shown set up the starting color for the rectangle and queue the animation to transition the color to the final color .
+1156	builds up the fields that the table will include .
+1157	individually specify a column .
+1158	used internally to build up cells for common crud action .
+1159	dynamically builds links for the actio .
+1160	add a scene to the hash of scenes with the scene name of the scene as the key to retrieving this scene .
+1161	apply all the post filtering to the specified scene with the given options @return a scene object that has been filtered .
+1162	create a hash that will return a setup missing scene by default .
+1163	returns all subclassed scenes of the scene or scenes provided .
+1164	when an actor is defined .
+1165	post a custom notification event .
+1166	perform an operation after the specified interval .
+1167	setups up the actors for the scene based on the modelfactories that have been defined .
+1168	setting the window places the scene within in the specified window .
+1169	register all the animations that were defined for this scene .
+1170	registering an actor involves setting up the actor within the window .
+1171	the base update method is called by the game window .
+1172	the base draw method is called by the game window .
+1173	transition to performs the work of transitioning this scene to another scene .
+1174	before a scene is transitioned away from to a new scene .
+1175	a scene represented as a hash currently only contains the drawers @return a hash of all the drawer .
+1176	a helper method that allows the current model to generate another model .
+1177	create an instance of a model .
+1178	get a list of activity measures for the specified user @param user id [ integer ] @param options [ hash ] @return [ array < withingssdkactivity > ] .
+1179	get a list of body measurements taken by withings devices @param user id [ integer ] @param options [ hash ] @return [ array < withingssdkmeasurementgroup > ] .
+1180	return a list of weight body measurements @param user id [ integer ] @param options [ hash ] @return [ array < withingssdkmeasureweight > ] .
+1181	get details about a user s sleep @param user id [ integer ] @param options [ hash ] @return [ array < withingssdksleep > ] .
+1182	public search resources like a movie .
+1183	internal sets the attributes to the object .
+1184	internal verifies if the value is an array of hashs .
+1185	internal builds objects for the nested resources from api .
+1186	changes the file content type using the ruby - filemagic ge .
+1187	send a request on the given channel with the given type and properties .
+1188	wait for a specific response on the given channel of the given type and return the event data for the response when it is received .
+1189	register a handler for events on the given channel of the given type .
+1190	fetch and handle events in a loop that blocks the calling thread .
+1191	open a new channel of communication and return a new channel object with convenience methods for communicating on that channel .
+1192	download the data from the remote serve .
+1193	parse the filenames in the feed and check which required and optional files are present .
+1194	check that every file has its required column .
+1195	check for the given list of expected filenames in the zip fil .
+1196	perform a head request against the source s url .
+1197	find a " next best " id when the head request does not return an " etag " header .
+1198	creates simple configuration parameters which may be set by the user @param names [ array < symbol > ] the names of the parameters to creat .
+1199	check the list of headers in the file against the expected columns in the definitio .
+1200	proxies model mapping to the proper platform mapper @param models [ hash ] a hash with model name keys and model values @param options [ hash ] runtime options @return [ array ] an array of models generated for a specific platfor .
+1201	generates a model and adds it to the models array .
+1202	given a path .
+1203	resolves any references buied in the items property of an array definition .
+1204	the nidyx model generator .
+1205	reads json from a file @param path [ string ] path of the file to read @return [ hash ] the parsed jso .
+1206	settings in config / environments / * take precedence over those specified here .
+1207	used in wechat pay ap .
+1208	checks if a status has been processed a status has been processed when the current status is superior or equal to the given status and the migration direction is up the current status is inferior or equal to the given status and the migration direction is dow .
+1209	creates and shows a uialertview .
+1210	recursive implementation of each resource file for each folder in the configuration .
+1211	yields each resource in the current scope in turn .
+1212	convert an instantiated url found in a webservice definition to a real url .
+1213	returns a proc that implements file filter strategy according to the type of filter installe .
+1214	adds a folder to the list of folders where test case definitions are to be found .
+1215	returns the data system to use for parsing schemas the data system associated with a configuration is build when the configuration folder contains a schema .
+1216	set the msqid ds object .
+1217	receive a message of type +type+ .
+1218	set each value in the semaphore set to the corresponding value in the array +values+ .
+1219	set the semid ds object .
+1220	set the shmid ds object .
+1221	attach to a shared memory address object and return it .
+1222	makes sure status get instanciated on migration s instanciation runs the migration following the direction sets the status .
+1223	sets an error to migration statu .
+1224	checks if a migration can be ru .
+1225	checks if a migration as been complete .
+1226	executes a given block if the status has not being processed then update the statu .
+1227	executes a block and returns the time it took to be execute .
+1228	transforms an array of paragraphes to a string using lines and columns each paragraph is actually an array of string .
+1229	creates a string from a hash of the following format column number = > [ lines ] " / nbspace " is used to define a borde .
+1230	normally we need to keep columns an ordered array .
+1231	generate a list of attributes for related column ( align right .
+1232	generate options for editable fields ( value .
+1233	return find args ( scope ) for current setting .
+1234	params [ filters ] = > " groupop " = > " and " .
+1235	def reload pages if needed if @pages by path .
+1236	find pages by a filter .
+1237	registers a page with the site .
+1238	registers a page s aliases with the sit .
+1239	returns a hash containing all the automatically determined shortest paths for every page .
+1240	returns an array like this [ page = > < page1 > .
+1241	available options locale -- the locale to use when comparing attributes direction -- either asc or desc numeric -- if true .
+1242	returns an array of normalized aliases based on the alias property defined for a page .
+1243	returns [ name .
+1244	returns the files that compose the content for this page .
+1245	returns an array of files in the folder that corresponds to this page that are not other pages .
+1246	parses a content file s property headers and tries to extract the first paragraph .
+1247	variables variables are associated with a page .
+1248	public methods returns the menu under the item that matches item name .
+1249	returns true if this menu item is the terminus menu item for path .
+1250	returns the last list of children at the specified dept .
+1251	returns anchor text from heading text .
+1252	convert any string to one suitable for a url .
+1253	removes all html marku .
+1254	remove < a name= x > < / a > from html .
+1255	generates nokogiri html node tree from this to .
+1256	generates html string from this to .
+1257	returns the appropriate tocitem for appending a new item at a particular heading level .
+1258	instance methods accepts a file path to a configuration file .
+1259	retrieves meta data from the file using exiftool .
+1260	returns the numeric type id for a string .
+1261	creates a hyperlink that results in the " show info " dialog being displayed on the client s screen .
+1262	creates a hyperlink that results in showing the route to the destination id from the source id .
+1263	render without layout .
+1264	creates symlinks for aliases to this page .
+1265	rails def render locale ( renderer .
+1266	called only by render to fil .
+1267	destroys given bucket .
+1268	options available animal .
+1269	options available breed .
+1270	options available name .
+1271	options available offset .
+1272	options available status .
+1273	get a listing of user posts .
+1274	posts a comment to the site @param text [ string ] the comment text .
+1275	get a listing of things which have the provided url .
+1276	submit a link or self post @param title [ string ] title of the post @param subreddit [ string ] the subreddit in which we are posting @param ( see .
+1277	vote on a comment or link @param direction [ - 1 .
+1278	determine whether or not an answer is correc .
+1279	propose a gotcha to the user - question and answer has .
+1280	deletes an image from a subreddit .
+1281	@todo test if every param is actually required sets subreddit settings .
+1282	set the subreddit stylesheet @param stylesheet [ string ] the stylesheet for the subreddit .
+1283	subscribe to a subreddit @param ( see .
+1284	get subreddits i have @param ( see linkscomments .
+1285	get a list of subreddits @param ( see linkscomments .
+1286	search subreddits @param q [ string ] the search query @param ( see linkscomments .
+1287	add a moderator to the subreddit @param container [ string ] the subreddit id .
+1288	add a contributor to the subreddit @param ( see .
+1289	ban a user from a subreddit @param ( see .
+1290	remove a moderator from a subreddit @param ( see .
+1291	remove a contributor from a subreddit @param ( see .
+1292	unban a user from a subreddit @param ( see .
+1293	auth into reddit via modhash and cookie .
+1294	deletes the current user .
+1295	changes the current user s password / email .
+1296	extend strings and / or symbols to create queries easie .
+1297	send a private message to reply to pm .
+1298	gets a listing of pms @param where [ inbox .
+1299	clear all the flair templates of a particular type @param type [ user flair .
+1300	deletes a user s flair @param user [ string ] the user who se flair is affected @param subreddit [ string ] the subreddit targeted .
+1301	deletes a flair template by id .
+1302	sets flair on a thing .
+1303	configures flair options for a subreddit .
+1304	post flair in a csv file to reddit @param csv [ string ] a string .
+1305	downloads flair from the subreddit this is limited to 1000 per request .
+1306	create or edit a flair template .
+1307	select a flair template and apply it to a user or link @param template id [ string ] the template id to apply .
+1308	toggle flair on and off for a subreddit @param enabled [ true .
+1309	get a comment listing from the site @param ( see linkscomments .
+1310	gets a listing of links from reddit .
+1311	search reddit @param query [ string ] the search query .
+1312	go through each response .
+1313	rubocopdisable metrics / parameterlist .
+1314	rubocopenable metrics / parameterlist .
+1315	intentionally disabling parameter list length check for private / internal method rubocopdisable metrics / parameterlist .
+1316	rubocopenable metrics / parameterlist .
+1317	distinguish a thing @param ( see .
+1318	removes a thing @param ( see .
+1319	get the modqueue .
+1320	get / clips get / clips .
+1321	get / new get / new .
+1322	post / create post / create .
+1323	post / [ id ] post / [ id ] .
+1324	get / search?search term= [ term ] get / search .
+1325	setter to convert user s choice of a week .
+1326	creates the div for the cli .
+1327	adds instance method to the class .
+1328	sets instance variables when block is yielded @param [ hashstring = > object ] instance variables hash of names and values to set @yield block when variables are set .
+1329	renders +object+ with +method+ @param [ object ] object an object to render @param [ symbol ] method a method name which is used for rendering @param args arguments passed to rendering method @yield block passed to rendering metho .
+1330	renders js @option options [ boolean ] cdata ( false ) should cdata be used? @example js a js function ( ) ; .
+1331	joins and renders +collection+ with +glue+ @param [ array < proc .
+1332	@param file [ string ] target file @param ref [ string ] git ref @param new line [ string ] file s ending new line @return [ string ] target file content .
+1333	returns +builder+ back into pool * dont * forget to lose the reference to the +builder+ @param [ abstract ] .
+1334	sets the cursor position to the specified +x+ and +y+ locations in the console output buffer .
+1335	creates a new isbm providerpublication client .
+1336	posts a publication message .
+1337	expires a posted publication message .
+1338	creates a new isbm client .
+1339	validates the well formedness of the xml string and raises an error if any errors are encountered .
+1340	creates an isbmadaptormessage from a isbm response .
+1341	sets default values for certain savon options .
+1342	reads the first message .
+1343	creates a new isbm consumerrequest client .
+1344	posts a request message on a channel .
+1345	expires a posted request message .
+1346	returns the first response message .
+1347	deletes the first response message .
+1348	returns the first request message in the message queue for the session .
+1349	posts a response message on a channel .
+1350	creates a new isbm channelmanagement client .
+1351	adds security tokens to a channel .
+1352	removes security tokens from a channel .
+1353	gets information about the specified channel .
+1354	gets information about all channels .
+1355	returns tokens mapped to wsseusernametoken hash .
+1356	will update the i18n backend if it has been configure .
+1357	sets the cursor position to the specified +x+ and +y+ locations in the console output buffer .
+1358	patch / put / phrases / .
+1359	use callbacks to share common setup or constraints between actions .
+1360	creates a new duration based on specified time components .
+1361	returns the latitude of this point ; signed numeric degrees if no format .
+1362	returns the longitude of this point ; signed numeric degrees if no format .
+1363	returns a string representation of this point ; format and dp as per lat ( ) / lon ( ) @param [ string ] format return value as d .
+1364	returns the list of projects available to the authenticated user .
+1365	returns the details for a specific project .
+1366	returns the list of experiments for a specified project .
+1367	returns the details for a specific experiment .
+1368	returns the stats for a specific experiment .
+1369	returns the list of variations for a specified experiment .
+1370	returns the details for a specific variation .
+1371	returns the list of audiences for a specified project .
+1372	returns the details for a specific audience .
+1373	return the parsed json data for a request that is done to the optimizely rest api .
+1374	compliments of the ruby wa .
+1375	connects to the tyrant table listening at the given host and port .
+1376	create a random number of a specified byte length returns bignu .
+1377	creates a random number of a exact bitlength returns bignu .
+1378	finds a random prime number of * at least * bitlength validate primeness using the miller - rabin primality test .
+1379	fixme needs focused tests evaluate the polynomial at x .
+1380	same args as new ( ) .
+1381	inserts a record in the table db table [ pk0 ] = [ name .
+1382	removes an entry in the table ( might raise an error if the delete itself failed .
+1383	returns a hash key = > record of all the records matching the given keys .
+1384	prepares a query instance ( block is optional ) .
+1385	adds a condition table .
+1386	process each record using the supplied block .
+1387	appends the given string at the end of the current string value for key k .
+1388	removes a record from the cabinet .
+1389	returns an array of all the primary keys in the db .
+1390	deletes all the entries whose keys begin with the given prefi .
+1391	given a list of keys .
+1392	given a list of keys .
+1393	increments the value stored under the given key with the given increment ( defaults to 1 ( integer ) ) .
+1394	def link to add item ( name .
+1395	return the document at the specified inde .
+1396	raises a dystopian error ( asks the db which one ) .
+1397	handling recursion - any enumerable elements ( except string ) is being extended with the module .
+1398	computes a hash of each characte .
+1399	return top scoring .
+1400	modify the background and foreground colors and their opacitie .
+1401	a wrapper for library returning a string ( binary data potentially ) .
+1402	appends the given string at the end of the current string value for key k .
+1403	( the actual .
+1404	removes a record from the cabinet .
+1405	copies the current cabinet to a new file .
+1406	returns an array with all the keys in the databse with no options given .
+1407	deletes all the entries whose keys begin with the given prefi .
+1408	given a list of keys .
+1409	merges the given hash into this cabinet ( or tyrant ) and returns self .
+1410	given a list of keys .
+1411	increments the value stored under the given key with the given increment ( defaults to 1 ( integer ) ) .
+1412	triggers a defrag run ( tc >= 1 .
+1413	-- btree methods ++ this is a b+ tree method only .
+1414	this is a b+ tree method only .
+1415	-- def check transaction support raise ( tokyoerror .
+1416	creates an empty instance of a tokyo cabinet in - memory map ( it s ok to pass the pointer of a c map directly .
+1417	returns an array of all the keys in the ma .
+1418	the equivalent of ruby array .
+1419	makes sure this offset / range fits the size of the lis .
+1420	inserts a record in the table db table [ pk0 ] = [ name .
+1421	removes an entry in the table ( might raise an error if the delete itself failed .
+1422	returns an array of all the primary keys in the table with no options given .
+1423	no misc methods for the table library .
+1424	prepares and runs a query .
+1425	prepares and runs a query .
+1426	prepares a query and then runs it and deletes all the results .
+1427	prepares a query and then runs it and deletes all the results .
+1428	returns the value ( as a ruby hash ) else nil ( the actual .
+1429	obviously something got wrong .
+1430	process each record using the supplied block .
+1431	find the icon .
+1432	get all colums for a given table .
+1433	if the column type is nominal return true .
+1434	if valid option was provided in convert metho .
+1435	this allows us to simplify the case where we want to have a context which contains one or more let statements supports giving either a hash or a string and a hash as arguments in both cases the hash will be used to define let statements when a string is specified that becomes the context description if string isn t specified .
+1436	allows you to simply specify that the subject should raise an exception takes no arguments or arguments of an exception class .
+1437	allows you to simply specify that the subject should not raise an exception .
+1438	application def default level return tml .
+1439	logs a user out from the given scopes or from all scopes at once if no scope is defined .
+1440	manually sets a user without going throught the whole login or authenticate process .
+1441	manually removes the user without going throught the whole logout process .
+1442	returns the currently connected user .
+1443	namespace of each cache ke .
+1444	pulls cache version from cd .
+1445	warms up cache from cdn or local file .
+1446	warms up cache from local file .
+1447	warms up cache from cd .
+1448	downloads cache from the cd .
+1449	arguments * file * name * type * flags * mode * env or * * file * * .
+1450	validate that current cache version hasn t expire .
+1451	fetches the version from the cach .
+1452	returns the db like open .
+1453	runs authentication strategies to log a user in .
+1454	runs a given strategy and returns true if it succeeded .
+1455	run script with params @param script [ string .
+1456	collects mimes and return the response for the negotiated format .
+1457	shameless steal from forem git github .
+1458	this is the common behavior for " navigation " requests .
+1459	this is the common behavior for " api " requests .
+1460	format data as hex in various styles .
+1461	run the encoding / decoding operation .
+1462	yield data 6 words at a time until eo .
+1463	initialize a new querybuilder for +index name+ .
+1464	build a sphinxql query to update the record identified by +id+ with the given attributes .
+1465	execute a single read query .
+1466	sets the name for this worker class if not already set ( i .
+1467	you can dispatch a job +baz+ on class +foobar+ by calling foobar .
+1468	adds a node to this layout .
+1469	looks up a node by name and returns it .
+1470	returns a frozen copy of this layout and all of its child node and worker objects .
+1471	if this deferrable succeeds .
+1472	note must be equal? to auto ( i .
+1473	converts an attribute list to a single hash ; some of the values may be set to auto .
+1474	creates a character with the given attributes a character can be designated either by the model ( e .
+1475	allows one to temporarily override the current characters while the given block execute .
+1476	get / achievements get / achievements .
+1477	get / achievements / 1 get / achievements / 1 .
+1478	get / achievements / new get / achievements / new .
+1479	post / achievements post / achievements .
+1480	put / achievements / 1 put / achievements / 1 .
+1481	delete / achievements / 1 delete / achievements / 1 .
+1482	return a deferrable which immediately fails with an exception .
+1483	function to check that the file size isn t excesive .
+1484	function to call api passing a payloa .
+1485	perform a a batch search on the index .
+1486	accepts a symbol that will define the inherited type of address .
+1487	sets validates presence of fields for the address based on the singleton method created on the address addressable type class .
+1488	geocode the address using address .
+1489	generate a new class using address as the superclass .
+1490	start the event loop for handling messages off the queu .
+1491	this method is replaced for rails 3 compatibility .
+1492	def get accessible product .
+1493	rdoc ==== bugzillabugzilla .
+1494	def check version rdoc ==== bugzillabugzilla .
+1495	follows mostly the defaults from the mail ge .
+1496	keep processing emails until nothing is found anymore .
+1497	options include file and base ur .
+1498	delete the batch job and update status may raise pbserror as it is unhandled here ! .
+1499	setter that accepts an oscmachetejob instance @param [ job ] new job the job object to be assigned to the statusable instance .
+1500	a hook that can be overidden with custom code also looks for default validation methods for existing warning this uses activesupportinflector methods underscore and parameterize @return [ boolean ] true if the results script is presen .
+1501	fixme should have a unit test for this ! job .
+1502	todo support a block ( solo dentro l blocco fai il nocolor ) .
+1503	carattere per carattere .
+1504	italia green white red ireland green white orange france green white orange uk blue white red white blue googl .
+1505	for simmetry padding m = length / 3 6 2 2 2 m m m rest 0 5 2 1 2 m+1 m m+1 2 4 1 2 1 m m+1 m .
+1506	retrieves the next largest prime for the largest number in batch example prime .
+1507	combines array into a string with given separato .
+1508	the " null - byte " character is prepended to be the first character in the charset to avoid loosing the first character of the charset when it is also the first character in a string to convert .
+1509	calculate an integer from a string .
+1510	convert an integer into its string representation according to the charset .
+1511	convert a single character into its integer representation according to the charset .
+1512	check if the provided string can be represented by the charset .
+1513	create a new instance of a polynomial with n coefficients .
+1514	creates a new eadvalidator when given the path to a directory as a strin .
+1515	broadcast notifications when a new record is create .
+1516	broadcast notifications when a record is updated .
+1517	broadcast notifications when a record is destroyed .
+1518	sets the logger - like object .
+1519	from rails / activemodel / lib / active model / validations / clusivity .
+1520	base constructor returns a mechanizepage instance which is the being searched on .
+1521	method which calls all rate fetching methods from the sub class and returns a hash with appropriate values .
+1522	parameters one of the following must be specified queue name = > string name of the queue to publish to topic name = > string name of the topic to publish to optional time to live = > expiration time in ms for the message ( jms ) persistent = > true or false ( defaults to false ) ( jms ) marshal = > symbol one of ruby .
+1523	parse the source string for a target string or regex or return nil .
+1524	def get bugs rdoc ==== bugzillabug .
+1525	define a parser for the current class .
+1526	@note get googledirectory user info @param attributes [ hash ] this attribute must include primary email " username@domain .
+1527	@note test if user exists in google directory @param attributes [ hash ] this attribute must include primary email " username@domain .
+1528	@note creates a new google directory user @param attributes [ hash ] this attribute must include primary email " username@domain .
+1529	@note updates an exising google directory user @param attributes [ hash ] this attribute must include primary email " username@domain .
+1530	@note updates an exising google directory user password - convience method instead of using user update @param attributes [ hash ] this attribute must include primary email " username@domain .
+1531	@note activates an exising google directory user password - convience method instead of using user update @param attributes [ hash ] this attribute must include primary email " username@domain .
+1532	@note suspends an exising google directory user password - convience method instead of using user update @param attributes [ hash ] this attribute must include primary email " username@domain .
+1533	@note deletes an exising google directory user @param attributes [ hash ] this attribute must include primary email " username@domain .
+1534	constructs a manager .
+1535	store off any options that are no longer set to defaul .
+1536	after calling this action .
+1537	note this method will be removed on next releas .
+1538	waits the given timeout for a response message on the queue .
+1539	if a line doesnt match any of the patterns .
+1540	selected option ( s ) of this select .
+1541	define a formatter for instances of the current class .
+1542	print selected nodes to stdout @param template [ templatebase ] template to evaluate and prin .
+1543	replace selected nodes with a template @param template [ templatebase ] template to replace nodes wit .
+1544	rename selected nodes with a template @param template [ templatebase ] template for new nam .
+1545	commit the given page into the gollum - wiki - repository .
+1546	commit all revisions of the given history into this gollum - wiki - repository .
+1547	scan the format string extracting literals and variables .
+1548	@note run a command against google directory @param command [ symbol ] choose command to perform these include user get .
+1549	supports strings .
+1550	shouldnt work right now yet .
+1551	executes a command during the shell session .
+1552	uses sftp to upload a single file to the host .
+1553	uses sftp to download a single file from the host .
+1554	uses sftp to write data to a single file .
+1555	initialize boundingbox .
+1556	for will paginate suppor .
+1557	called to output the result to the console .
+1558	rdoc ==== bugzillauser .
+1559	def session rdoc ==== bugzillauser .
+1560	define a dsl for options any string is processed as an option and it ends up in the @options has .
+1561	define a dsl for column specification - name is the name of the column - block contains two declarations .
+1562	bulk declare columns we intend to read - hash is a hash in the form symbolic name colref i .
+1563	read a file and store it internally @param hash .
+1564	show to stdout the first n records we read from the file given the current configuratio .
+1565	provide a config source file path .
+1566	extract just the part of the backtrace that is " below " the config file mentioned .
+1567	ruby stdlib queue lacks a drain function .
+1568	return all nodes in order as an hashalways us .
+1569	returns the string representation of nodes and blocks by updating with given parameter .
+1570	return nodes by sorting optio .
+1571	by parsing each node s hash .
+1572	after calling this action .
+1573	iterates over params hash and applies non - empty values as filters @param params [ hash ] filters list @return [ activerecordrelation ] filtered lis .
+1574	take an input stream and convert all wikka syntax to markdown synta .
+1575	gets a list of all the sites for the compan .
+1576	returns site attributes and history data if an optional query hash is supplied @client .
+1577	assigns output to a file with the given name .
+1578	creates a printf format for the given widths .
+1579	logs the given message .
+1580	returns all available options fields and their respective label as a hash .
+1581	selects the given option ( s ) and deselects all other ones .
+1582	returns the selected options of this optiongroup .
+1583	public methods process actions sent from the client @param [ hash ] data contains command to be executed and its parameters " publication " " model .
+1584	streams notification for activerecord model changes @param [ activerecordbase ] model model to watch for changes @param [ hash ] options streaming option .
+1585	transmits packets to connected client @param [ hash ] packet packet with changes notification .
+1586	todo should exist another method passed ! for tag name required .
+1587	returns true if strict ancestor o .
+1588	fixme this currently depends on series being numbered sequentially and being arranged in that order in the ead xml .
+1589	memoized hash of built in object id .
+1590	get the time for this rate ( based on the information on the website ) .
+1591	see stevens s " advanced programming in the unix environment " chapter 1 .
+1592	redirect file descriptors inherited from the parent .
+1593	read the working pid from the pid file .
+1594	take an input stream and convert all wikka syntax to markdown syntax .
+1595	nodoc perform string escaping for atom slug .
+1596	if a location is given then extraction can take plac .
+1597	intialize a new mixml tool load xml files @param file names [ array ] names of the xml files to load @return [ void ] .
+1598	save all loaded xml files pretty prints the xml if .
+1599	print all loaded xml files pretty prints the xml if .
+1600	perform work on a list of xml files perform the following steps .
+1601	select nodes using an xpath expression and execute dsl commands for these nodes @param paths [ array < string > ] xpath expression @yield block to execute for each nodeset @return [ void ] .
+1602	select nodes using css selectors and execute dsl commands for these nodes @param selectors [ array < string > ] css selectors @yield block to execute for each nodeset @return [ void ] .
+1603	execute a script or a block @param program [ string ] dsl script to execute @yield block to execute @return [ void ] .
+1604	execute block for each node @param selection [ selection ] selected nodes @yield block to execute for each node @yieldparam node [ nokogirixmlnode ] current nod .
+1605	decommentifies the supplied input .
+1606	tagifies the supplied input .
+1607	searches for the specified label and returns the form field belonging to it .
+1608	fills in the given value ( s ) to the passed attribute .
+1609	returns the current value of the specified form field .
+1610	returns an optiongroup @return [ optiongroup ] the selected optiongrou .
+1611	default rake task initializer call this to run a commanddefinition subclass @param defin an instance of a command definition subclass @yield in the block .
+1612	create a caramelize config file .
+1613	creates new command line interface runs a script with given name ( token ) and argv inside this cli instanc .
+1614	registers a workflow relationship and sets up a hook to additional builder methods .
+1615	do the actual work of building the formatted output .
+1616	do the actual work of parsing the formatted input .
+1617	do the actual work of parsing the formatted input .
+1618	=begin this wants to be a magic configuration loader who looks for configuration automatically in many places .
+1619	must be called within a mutex synchroniz .
+1620	handle things like self .
+1621	perform a get request options hash should contain query parameter .
+1622	perform a put request options hash should contain request body parameter .
+1623	perform a post request options hash should contain request body parameters it can also contain a returnobj parameter which will cause a full reponse object to be returned instead of just the bod .
+1624	wrap up parameters into a request and execute i .
+1625	adds token with specified timestamp to the place .
+1626	the first element of argv should be a subcommand .
+1627	ensure valid credentials .
+1628	get data from the api .
+1629	post to the amee api .
+1630	post to the amee api .
+1631	put to the amee api .
+1632	put to the amee api .
+1633	post to the sign in resource on the api .
+1634	run each request through some basic error checking .
+1635	wrapper for sending requests through to the api .
+1636	create and return a new timed place for this model .
+1637	create and return new transition for this model .
+1638	starts simulation of this net .
+1639	defines new callback for this net .
+1640	nodoc calls callbacks .
+1641	add output arc to the +place+ .
+1642	fire this transition if possible returns true if fired false otherwis .
+1643	process text with remote web - servic .
+1644	install rubygems and the librarian - puppet gem onto each hos .
+1645	copy the module under test to a temporary directory onto the host .
+1646	this method returns a single crisis .
+1647	this method returns statistic information about the crises .
+1648	this method returns statistic information about user .
+1649	src can be io or string .
+1650	xmlattribute create attribute ( string name .
+1651	void write nodes ( xmltextwriter writer .
+1652	write the attribute collection for a node .
+1653	defines the searchable content in activerecord objects .
+1654	creates new hashmarking with specified keys .
+1655	creates new token of the +object+ and adds it to the marking .
+1656	deletes the +token+ from the marking .
+1657	creates a join to the given expression .
+1658	adds the where clauses from the given query to the given arel construct .
+1659	truncates the result set based on the limit parameter in the query .
+1660	converts the ids to classes .
+1661	merges the given posable object ids for a single query word into the given search result .
+1662	performs a complete search .
+1663	finds all matching ids for a single word of the search query .
+1664	returns all matching ids for all words of the search query .
+1665	deprecated and not recommende .
+1666	fulfilled by? receives exactly one contract .
+1667	void write ( string str ) .
+1668	ottiene la directory corrente nella cartella dell app specificata .
+1669	determina il file di versione dell app .
+1670	ritorna la versione dell app .
+1671	alza la versione dell app corrente a quella specificata .
+1672	inizializza l eseguibile .
+1673	esegue un comando e cattura l output ritornandolo come risultato di questo metodo .
+1674	stampa i comandi possibili .
+1675	get endpoint @param [ string ] endpoint the endpoint that should be called .
+1676	post endpoint @param [ string ] endpoint the endpoint that should be called .
+1677	head endpoint @param [ string ] endpoint the endpoint that should be called .
+1678	retrieve lumberjacklogentry objects from the mongodb collection .
+1679	create a new timedhashmarking creates token with +object+ as its value and adds it to the marking .
+1680	set current time for the marking .
+1681	send a message to the remote host data - the string contents of your message examples ws .
+1682	internal setup encoder / decoder and bind to all decoder events .
+1683	internal connect to the remote host and synchonize the socket and this client objec .
+1684	== instance methods make a post api call with the current path value and @options .
+1685	make a delete api call with the current path value and @options .
+1686	return a has representing the named instance .
+1687	return a hash of all instances .
+1688	read a csv from +path+ .
+1689	write +rows+ to +path+ as csv .
+1690	write +rows+ to $stdout as a csv .
+1691	returns a string containing +rows+ as a csv .
+1692	add value is how we add keys to the resulting struct we need a name and a type .
+1693	two rust structs are equal if all of their keys / value types are the same to s controlls how to display the ruststruct as a rust struc .
+1694	a callback that runs before create vote example ballotboxmanager .
+1695	a callback that runs after vote created example ballotboxmanager .
+1696	search =begin def self .
+1697	wait for all the instances to become inservic .
+1698	read a value from an ow path .
+1699	write a value to an ow path .
+1700	list the contents of an ow path .
+1701	sums up statistics across all queries .
+1702	sums up statistics across all models and querie .
+1703	note may be causing memory bloa .
+1704	[ override ] write attribute to account for setting hash key and id to same value u .
+1705	inject a named object into this contex .
+1706	retrieve a named object from this context .
+1707	allow configuration options to be set for named objects .
+1708	converts a path and params to a salesforce - suitable url .
+1709	endpoint takes a map .
+1710	applies an endpoint to obj .
+1711	identifies a valid url for this rest instanc .
+1712	assert if two objects are equa .
+1713	assert if something is of the right typ .
+1714	duck typing assertion this checks if the given object responds to the given method calls .
+1715	asserts that the given element is a string that is not nil and not an empty string .
+1716	executes the given block and asserts if the result is true .
+1717	i m passing in a time variable here to make links unique .
+1718	i m passing in a time variable here to make links unique .
+1719	constructor authenticate with the server login with username and password .
+1720	polls the client for incremental changes .
+1721	add one or more trackers to a torrent if passing mulitple urls .
+1722	begin downloading one or more torrents .
+1723	delete one or more torrents and their data if passing multiple torrent hashes .
+1724	delete one or more torrents ( doesnt delete their data ) if passing multiple torrent hashes .
+1725	set location for a torren .
+1726	increase the priority of one or more torrents if passing multiple torrent hashes .
+1727	decrease the priority of one or more torrents if passing multiple torrent hashes .
+1728	increase the priority of one or more torrents to the maximum value if passing multiple torrent hashes .
+1729	decrease the priority of one or more torrents to the minimum value if passing multiple torrent hashes .
+1730	set the download priority of a file within a torrent file id is a 0 based position of the file within the torren .
+1731	set a torrent s download limit a limit of 0 means unlimited .
+1732	set a torrent s upload limit a limit of 0 means unlimited .
+1733	return the md5 checksum for the file at +path+ .
+1734	iterate over all keys .
+1735	iterate over all items using key streaming .
+1736	run an external command .
+1737	retrieve a list of clicks based on the following parameters @param [ string ] to start date @param [ string ] from end date @return [ rsqootsqootclick ] .
+1738	build instances using build options if template is passed .
+1739	initialize a new scopecreator object @param [ activerecord ] @param [ string .
+1740	read options from yaml confi .
+1741	patch / put / subscriptions / .
+1742	initializes a new feedtosis library .
+1743	marks entries as either seen or not seen based on the unique signature of the entry .
+1744	processes the results by identifying which entries are new if the response is a 200 .
+1745	sets the headers from the backend .
+1746	stores information about the retrieval .
+1747	computes a unique signature for the feednormalizerentry object given .
+1748	print a colored banner to $stderr in green .
+1749	add logger support .
+1750	all responses from openstack where any errors need to be caught are passed through this function .
+1751	wrapper function for a get request .
+1752	wrapper function for delete requests .
+1753	wrapper function for a put request .
+1754	wrapper function for a put request .
+1755	below here is old code that may or maynot work .
+1756	special rest call for sending a file stream using an octet - stream main change is just custom headers .
+1757	the rules followed are 1 .
+1758	returns a path relative to the base path .
+1759	renders an index page for the specified directory .
+1760	css extend = > " " .
+1761	@param [ array < symbol > .
+1762	@return [ tabledatarow ] the row at the given row number ( zero based ) .
+1763	@return [ object ] the cell value at the given row and column number ( zero based ) .
+1764	append a row to the table .
+1765	this is the method that will place the anchor tag and id of the footnote within the paragraph body itself .
+1766	this is the method that will actually spit out the div that the footnote s content is in .
+1767	database instance action .
+1768	given a class .
+1769	add errors .
+1770	finds the neighbors of a given cell s co - ordinates .
+1771	this is the first stage in a game s .
+1772	this is the third and last stage in a game s .
+1773	calculates the co - ordinates of neighbors of a given pair of co - ordinates .
+1774	retrieve a list of merchants base on the following parameters @param [ string ] id ( the merchant s id .
+1775	encode a standard payload to a hybi10 websocket fram .
+1776	this method sets up the +permission+ class with all baked in methods .
+1777	parses out the < tt > base path < / tt > setting from a path to display it in a less verbose way .
+1778	makes a post request ==== attributes * +hash+ - hash of parameters * * +endpoint+ - url endpoint ex .
+1779	low level api for request ( needed por put .
+1780	networks get a list of a tenants networks call - seq networks ( id ) = > a single network with the id matching the parameter networks = > all networks visible to the tenant making the reques .
+1781	create a new network on openstack given a name and tenant id .
+1782	create a new port given network and device ids .
+1783	weird function for adding a port to multiple subnets if nessessary .
+1784	this is a convenience method that sets the content - type headers and writes the json string to the response .
+1785	this is a convenience method that forms an absolute url based on the url parameter .
+1786	+name+ ( symbol ) name for method +types+ ( array ) array with types .
+1787	gets a list of servers from openstack call - seq servers ( id ) = > a single server with the id matching the parameter servers ( ) = > all servers visible to the tenant making the reques .
+1788	creates a server on openstack .
+1789	perform an action on a server on openstack .
+1790	delete an image stored on openstack through the nova endpoin .
+1791	get method .
+1792	generate valid sqoot api v2 url and provide two different way of authentication header .
+1793	decide which api key should be used private .
+1794	retrieve information of commissions based on the following parameters @param [ string ] to start date @param [ string ] from end date @return [ rsqootsqootcommission ] .
+1795	list all available leagues .
+1796	show league table / current standing .
+1797	list all fixtures for a certain league .
+1798	list fixtures across a set of leagues .
+1799	show all fixtures for a certain team .
+1800	add match method .
+1801	tries to return the value of the column identified by index .
+1802	convenience access of values in the row .
+1803	access a single cell by either index .
+1804	access multiple values by either index .
+1805	allow reading and writing cell values by their accessor name .
+1806	providers must define an authorize method .
+1807	@ ! method initialize ( api key = get api key from env ) constructor method @param api key [ string ] ( see api key ) @return [ reliquaryclient ] the initialized client @ ! method parse ( json ) parse returned json into a ruby object @param [ string ] json json - formatted string @return [ object ] ruby object representing json - formatted strin .
+1808	adds a watch for a shallow change in the contents ( attributes .
+1809	does a deep traversal of all values reachable from the given root object ( s ) .
+1810	must behave like a voltmodel and respond to .
+1811	must behave like a voltarraymodel or voltreactivearra .
+1812	must behave like a voltreactivehas .
+1813	method option person .
+1814	add a new secondary index to this model .
+1815	the map model method is a convenience method to map the model id to getters and setters .
+1816	get a list of a tenants routers call - seq routers ( id ) = > a single router with the id matching the parameter routers = > all routers visible to the tenant making the reques .
+1817	create a new router with a given name .
+1818	delete a connection between a subnet and router given either port or subnet ids .
+1819	find in self find in ancestors find types find any type .
+1820	load config from file .
+1821	retrieve a list of providers base on the following parameters @return [ rsqootsqootprovider ] .
+1822	retrieve a list of categories base on the following parameters @return [ rsqootsqootcategory ] category lis .
+1823	this method sets up the +role+ class with all baked in methods .
+1824	def nil if blank self .
+1825	if chainable method or returns " self " for some other reason .
+1826	retrieve a list of deals based on the following parameters @param [ string ] query ( search deals by title .
+1827	auto increment for deals query .
+1828	uniq deals from sqoot .
+1829	a status checker for method total sqoot deals if the query parameters changed .
+1830	read cookies from mozilla cookies .
+1831	write cookies to mozilla cookies .
+1832	add expired time functionality to this gem by default is 1 .
+1833	make a get api call with the current path value and @options .
+1834	no id provided - lists details for available images .
+1835	registers a virtual machine image .
+1836	replaces the membership list for an image .
+1837	adds a member to an image .
+1838	like mkdir - p +dir+ .
+1839	like cp - pr +src+ +dst .
+1840	like ln - sf +src+ +dst .
+1841	like chown useruser file .
+1842	like chmod mode file .
+1843	like rm - rf && mkdir - p .
+1844	atomically write to +path+ .
+1845	can be initialized from the following sources - a wordtreedisklibrary object - an open file object ( containing a list of files or paths to books ) - a string directory ( presumed to be the library on disk ) - a string file ( containing a list of files or paths to books ) .
+1846	this implementation is what i m loosely calling " type 1 " or " regular " object creation - assume we re looking for a class to create an instance with - it may or may not have a declared list of named objects it needs to be constructed wit .
+1847	should be run by another thread - respond to all queued request .
+1848	similar to tabledatatable .
+1849	@param [ hash ] options @option options [ symbol ] include header defaults to true .
+1850	add a new folder to @config in the correct place .
+1851	return a hash of the configfile or empty hash if error encountere .
+1852	last parameter in array can be a hash of objects it is implemented this way ( instead of ( * models .
+1853	return the record provided ( if added to the identity map ) or return the corresponding record if it was already presen .
+1854	turns all urls into clickable links .
+1855	turns all email addresses into clickable links .
+1856	specifies a new pluralization rule and its replacement .
+1857	specifies a new singularization rule and its replacement .
+1858	specifies a new irregular that applies to both pluralization and singularization at the same time .
+1859	run the action if valid and return true if successfu .
+1860	=begin def my set render template ( tpl view .
+1861	rubocopdisable metrics / methodlengt .
+1862	rubocopenable metrics / methodlengt .
+1863	output the results based on the requested output forma .
+1864	authenticate via keystone .
+1865	scope token provides two ways to call it \ tscope token ( tenantname ) = > just using the current token and a tenantname it \ t \ t \ t \ t scopes in the token .
+1866	add a service to the keystone services director .
+1867	disables an instance method .
+1868	returns a proc that acts as a replacement for the disabled method .
+1869	the replacement for the original method .
+1870	replaces the original implementation of the method with an implementation that allows disabling .
+1871	calculate public key from secre .
+1872	convert int to byte - string ( littleendian ) num unsigned number to convert to bytes length byte lengt .
+1873	region calculate mod calculate base * * exponent % modulu .
+1874	region calculate point of ed25519 curve points are represented as array [ x .
+1875	computes pointq = s * point .
+1876	return point a == point .
+1877	region point manipulation compute corresponding x - coordinate .
+1878	compress element [ point ] of ed25519 curve = compressed format of point ( x .
+1879	decompress point that is compressed into 32byte .
+1880	region key manipulation hash512 ( secret ) = > hash ( 512bit ) = > [ lh ( 256bit ) ] / [ rh ( 256bit ) ] = > lh -> ( set some bits ) -> a return ( a .
+1881	region sign and verify [ signature format ] | compressed data of r | s | < - concatnat .
+1882	public keykey = ag " a " is generated form a secre .
+1883	get part by its name param @return par .

@@ -1,0 +1,42 @@
+model_dir: exps/ruby55
+
+data:
+  train_features_file:
+    - ../datasets/ruby/train/src_path.txt
+    - ../datasets/ruby/train/src_code.txt
+  train_labels_file: ../datasets/ruby/train/tgt_title.txt
+  eval_features_file:
+    - ../datasets/ruby/eval/src_path.txt
+    - ../datasets/ruby/eval/src_code.txt
+  eval_labels_file: ../datasets/ruby/eval/tgt_title.txt
+
+  source_1_vocabulary: ../datasets/vocab/path-vocab.txt
+  source_2_vocabulary: ../datasets/vocab/src-vocab.txt
+  target_vocabulary: ../datasets/vocab/tgt-vocab.txt
+  
+  train_files_weights:
+    - 0.5
+    - 0.5
+params:
+  optimizer: Adam
+  learning_rate: 0.5132
+  beam_width: 1
+  num_hypotheses: 1
+  minimum_learning_rate: 0.0001
+eval:
+  steps: 10000   #10000
+  scorers: bleu
+  export_on_best: bleu
+  export_format: checkpoint
+train:
+  batch_size: 1
+  effective_batch_size: 1
+  max_step: 250000  #1000000
+  max_step: 250000
+  sample_buffer_size: -1
+  save_summary_steps: 100
+  save_checkpoints_steps: 1000
+
+infer:
+  batch_size: 8
+  batch_type: examples
